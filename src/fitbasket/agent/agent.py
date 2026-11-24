@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import asyncio
 import json
 import os
 from dataclasses import dataclass, field
@@ -58,6 +59,20 @@ class FitBasketAgent:
         self._specs = [ToolSpec(t.name, t.description, t.json_schema()) for t in self.tools]
 
     def run(self, state: UserState, user_message: str, history: list[Message] | None = None) -> AgentResult:
+        """Synchronous entry point (CLI, FastAPI threadpool, tests)."""
+        if hasattr(self.provider, "acomplete"):
+            return asyncio.run(self.arun(state, user_message, history))
+        # Sync providers never suspend, so the coroutine completes on its first step.
+        coro = self.arun(state, user_message, history)
+        try:
+            coro.send(None)
+        except StopIteration as done:
+            return done.value
+        coro.close()
+        raise RuntimeError("Provider suspended unexpectedly; give it an acomplete() method.")
+
+    async def arun(self, state: UserState, user_message: str, history: list[Message] | None = None) -> AgentResult:
+        """Async entry point, used in the browser where model calls go through fetch()."""
         trace = Trace()
         history = list(history or [])
         ref = reference_data()
@@ -76,7 +91,10 @@ class FitBasketAgent:
         tool_calls_used = 0
         for step in range(MAX_STEPS):
             with trace.span("llm", "llm", step=step, model=self.provider.model) as s:
-                resp = self.provider.complete(SYSTEM_PROMPT, history, self._specs)
+                if hasattr(self.provider, "acomplete"):
+                    resp = await self.provider.acomplete(SYSTEM_PROMPT, history, self._specs)
+                else:
+                    resp = self.provider.complete(SYSTEM_PROMPT, history, self._specs)
                 s.attributes.update(
                     input_tokens=resp.usage.input_tokens,
                     output_tokens=resp.usage.output_tokens,

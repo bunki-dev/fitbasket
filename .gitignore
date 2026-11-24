@@ -12,3 +12,4 @@ evals/reports/*.json
 node_modules/
 web/dist/
 .DS_Store
+web/public/py/

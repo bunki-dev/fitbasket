@@ -64,7 +64,7 @@ export function Chat({ turns, busy, error, onSend }: Props) {
         {busy && <div className="turn turn-assistant turn-pending">Working on it…</div>}
         {error && (
           <div className="chat-error" role="alert">
-            Couldn't reach FitBasket: {error}. Check the API is running on port 8000, then try again.
+            Something went wrong: {error}
           </div>
         )}
         <div ref={endRef} />

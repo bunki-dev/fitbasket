@@ -76,6 +76,17 @@ class UserState:
         raw = _load("demo_profile")
         return cls(profile=Profile(**raw["profile"]), pantry=dict(raw["pantry"]))
 
+    @classmethod
+    def from_snapshot(cls, data: dict) -> UserState:
+        """Rebuild state saved with snapshot() (used to restore a session on the phone)."""
+        return cls(
+            profile=Profile(**data["profile"]),
+            pantry=dict(data.get("pantry") or {}),
+            meal_plan=MealPlan(**data["meal_plan"]) if data.get("meal_plan") else None,
+            basket=Basket(**data["basket"]) if data.get("basket") else None,
+            workout_plan=WorkoutPlan(**data["workout_plan"]) if data.get("workout_plan") else None,
+        )
+
     def snapshot(self) -> dict:
         return {
             "profile": self.profile.model_dump(),

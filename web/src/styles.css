@@ -15,6 +15,7 @@
 
 * { box-sizing: border-box; }
 html, body, #root { height: 100%; }
+.app, .boot { height: 100dvh; }
 body {
   margin: 0;
   background: var(--sage);
@@ -30,7 +31,9 @@ button, textarea { font: inherit; color: inherit; }
 .app { display: flex; flex-direction: column; height: 100%; }
 .topbar {
   display: flex; align-items: center; gap: 1.25rem;
-  padding: 0.75rem 1.5rem; background: var(--green); color: #fff;
+  padding: calc(0.75rem + env(safe-area-inset-top)) calc(1.5rem + env(safe-area-inset-right)) 0.75rem
+    calc(1.5rem + env(safe-area-inset-left));
+  background: var(--green); color: #fff;
 }
 .brand { display: flex; align-items: center; gap: 0.6rem; font-weight: 700; font-size: 1.25rem; letter-spacing: -0.01em; }
 .brand-mark {
@@ -150,14 +153,57 @@ button, textarea { font: inherit; color: inherit; }
 .span-error .span-bar { background: var(--over); }
 .span-err { margin: 0.2rem 0 0; font-size: 0.78rem; color: var(--over); }
 
-/* ---------- small screens ---------- */
+/* ---------- boot screen ---------- */
+.boot { display: grid; place-content: center; justify-items: center; gap: 1rem; background: var(--green); color: #fff; padding: 2rem; text-align: center; }
+.brand-mark-lg { width: 56px; height: 46px; border-width: 5px; border-top-width: 14px; border-radius: 4px 4px 14px 14px; }
+
+/* ---------- settings sheet ---------- */
+.sheet-backdrop { position: fixed; inset: 0; background: rgba(24, 32, 28, 0.45); display: grid; place-items: center; padding: 1rem; z-index: 10; }
+.sheet {
+  width: min(28rem, 100%); max-height: 90dvh; overflow-y: auto; background: var(--sage); border-radius: 14px;
+  padding: 1.25rem 1.25rem calc(1.25rem + env(safe-area-inset-bottom));
+}
+.sheet h2 { margin: 0 0 0.75rem; font-size: 1.3rem; }
+.choices { border: 0; margin: 0 0 1rem; padding: 0; display: grid; gap: 0.5rem; }
+.choice { display: flex; gap: 0.7rem; align-items: flex-start; padding: 0.7rem 0.8rem; background: var(--paper); border: 1px solid var(--line); border-radius: 10px; cursor: pointer; }
+.choice.is-on { border-color: var(--green); box-shadow: inset 0 0 0 1px var(--green); }
+.choice input { margin-top: 0.3rem; accent-color: var(--green); }
+.choice span { display: grid; }
+.choice small { color: var(--muted); }
+.field { display: grid; gap: 0.3rem; margin-bottom: 0.8rem; font-weight: 600; font-size: 0.9rem; }
+.field input { font: inherit; font-weight: 400; padding: 0.6rem 0.7rem; border: 1px solid var(--line); border-radius: 8px; background: var(--paper); }
+.sheet-actions { display: flex; justify-content: flex-end; gap: 0.5rem; margin-top: 1rem; }
+.sheet-actions button { padding: 0.55rem 1.1rem; border-radius: 8px; font-weight: 600; cursor: pointer; }
+.primary { background: var(--green); color: #fff; border: 0; }
+.secondary { background: none; border: 1px solid var(--line); }
+
+/* ---------- bottom navigation (phones) ---------- */
+.bottom-nav { display: none; }
+
 @media (max-width: 860px) {
-  .layout { grid-template-columns: 1fr; grid-template-rows: minmax(55vh, 1fr) auto; overflow-y: auto; }
-  .panel { border-left: 0; border-top: 1px solid var(--line); }
-  .tabs { overflow-x: auto; padding: 0.6rem 0.75rem 0; }
-  .tabs button { padding: 0.45rem 0.6rem; }
-  .topbar { flex-wrap: wrap; padding: 0.75rem 1rem; }
-  .model { display: none; }
+  .layout { grid-template-columns: 1fr; }
+  .layout[data-view="chat"] .panel,
+  .layout:not([data-view="chat"]) .chat { display: none; }
+  .panel { border-left: 0; background: var(--sage); }
+  .tabs { display: none; }
+  .panel-body { padding: 1rem 0.9rem 1.5rem; }
+  .topbar { gap: 0.6rem; padding-left: calc(1rem + env(safe-area-inset-left)); padding-right: calc(1rem + env(safe-area-inset-right)); }
+  .who { display: none; }
+  .topbar-right { gap: 0.5rem; }
+  .ghost { padding: 0.3rem 0.6rem; font-size: 0.8rem; }
+  .chat-empty { margin-top: 3vh; }
+  .composer { padding: 0.6rem 0.75rem; }
+  .bottom-nav {
+    display: grid; grid-template-columns: repeat(4, 1fr);
+    background: var(--paper); border-top: 1px solid var(--line);
+    padding-bottom: env(safe-area-inset-bottom);
+  }
+  .bottom-nav button {
+    position: relative; display: grid; justify-items: center; gap: 0.1rem; padding: 0.45rem 0 0.4rem;
+    background: none; border: 0; color: var(--muted); font-size: 0.72rem; cursor: pointer;
+  }
+  .bottom-nav button[aria-current="page"] { color: var(--green); font-weight: 600; }
+  .dot { position: absolute; top: 0.4rem; left: calc(50% + 8px); width: 8px; height: 8px; border-radius: 50%; background: var(--ticket); box-shadow: 0 0 0 2px var(--paper); }
 }
 
 @media (prefers-reduced-motion: reduce) {
