@@ -158,7 +158,7 @@ export default function App() {
               </button>
             ))}
           </nav>
-          <div className="panel-body" role="tabpanel">
+          <div className="panel-body" role="tabpanel" key={tab}>
             {tab === "basket" && <Cart basket={state?.basket ?? null} />}
             {tab === "meals" && <MealWeek plan={state?.meal_plan ?? null} />}
             {tab === "workouts" && <Workouts plan={state?.workout_plan ?? null} />}
