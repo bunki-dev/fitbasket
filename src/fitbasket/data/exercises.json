@@ -1,0 +1,323 @@
+[
+  {
+    "id": "pushup",
+    "name": "Push-up",
+    "type": "strength",
+    "muscles": [
+      "chest",
+      "triceps",
+      "core"
+    ],
+    "equipment": "none",
+    "level": "beginner",
+    "prescription": "3x10",
+    "video_query": "push up proper form"
+  },
+  {
+    "id": "incline_pushup",
+    "name": "Incline push-up",
+    "type": "strength",
+    "muscles": [
+      "chest",
+      "triceps"
+    ],
+    "equipment": "none",
+    "level": "beginner",
+    "prescription": "3x12",
+    "video_query": "incline push up form"
+  },
+  {
+    "id": "squat",
+    "name": "Bodyweight squat",
+    "type": "strength",
+    "muscles": [
+      "quads",
+      "glutes"
+    ],
+    "equipment": "none",
+    "level": "beginner",
+    "prescription": "3x15",
+    "video_query": "bodyweight squat form"
+  },
+  {
+    "id": "split_squat",
+    "name": "Bulgarian split squat",
+    "type": "strength",
+    "muscles": [
+      "quads",
+      "glutes"
+    ],
+    "equipment": "none",
+    "level": "intermediate",
+    "prescription": "3x8 each",
+    "video_query": "bulgarian split squat form"
+  },
+  {
+    "id": "glute_bridge",
+    "name": "Glute bridge",
+    "type": "strength",
+    "muscles": [
+      "glutes",
+      "hamstrings"
+    ],
+    "equipment": "none",
+    "level": "beginner",
+    "prescription": "3x15",
+    "video_query": "glute bridge form"
+  },
+  {
+    "id": "reverse_lunge",
+    "name": "Reverse lunge",
+    "type": "strength",
+    "muscles": [
+      "quads",
+      "glutes"
+    ],
+    "equipment": "none",
+    "level": "beginner",
+    "prescription": "3x10 each",
+    "video_query": "reverse lunge form"
+  },
+  {
+    "id": "pike_pushup",
+    "name": "Pike push-up",
+    "type": "strength",
+    "muscles": [
+      "shoulders",
+      "triceps"
+    ],
+    "equipment": "none",
+    "level": "intermediate",
+    "prescription": "3x8",
+    "video_query": "pike push up form"
+  },
+  {
+    "id": "db_row",
+    "name": "Dumbbell row",
+    "type": "strength",
+    "muscles": [
+      "back",
+      "biceps"
+    ],
+    "equipment": "dumbbells",
+    "level": "beginner",
+    "prescription": "3x10 each",
+    "video_query": "one arm dumbbell row form"
+  },
+  {
+    "id": "db_press",
+    "name": "Dumbbell shoulder press",
+    "type": "strength",
+    "muscles": [
+      "shoulders",
+      "triceps"
+    ],
+    "equipment": "dumbbells",
+    "level": "beginner",
+    "prescription": "3x10",
+    "video_query": "dumbbell shoulder press form"
+  },
+  {
+    "id": "db_rdl",
+    "name": "Dumbbell Romanian deadlift",
+    "type": "strength",
+    "muscles": [
+      "hamstrings",
+      "glutes",
+      "back"
+    ],
+    "equipment": "dumbbells",
+    "level": "intermediate",
+    "prescription": "3x10",
+    "video_query": "dumbbell romanian deadlift form"
+  },
+  {
+    "id": "goblet_squat",
+    "name": "Goblet squat",
+    "type": "strength",
+    "muscles": [
+      "quads",
+      "glutes",
+      "core"
+    ],
+    "equipment": "dumbbells",
+    "level": "beginner",
+    "prescription": "3x12",
+    "video_query": "goblet squat form"
+  },
+  {
+    "id": "superman",
+    "name": "Superman hold",
+    "type": "strength",
+    "muscles": [
+      "back",
+      "glutes"
+    ],
+    "equipment": "none",
+    "level": "beginner",
+    "prescription": "3x30s",
+    "video_query": "superman exercise form"
+  },
+  {
+    "id": "plank",
+    "name": "Plank",
+    "type": "core",
+    "muscles": [
+      "core"
+    ],
+    "equipment": "none",
+    "level": "beginner",
+    "prescription": "3x40s",
+    "video_query": "plank proper form"
+  },
+  {
+    "id": "side_plank",
+    "name": "Side plank",
+    "type": "core",
+    "muscles": [
+      "obliques",
+      "core"
+    ],
+    "equipment": "none",
+    "level": "beginner",
+    "prescription": "3x30s each",
+    "video_query": "side plank form"
+  },
+  {
+    "id": "dead_bug",
+    "name": "Dead bug",
+    "type": "core",
+    "muscles": [
+      "core"
+    ],
+    "equipment": "none",
+    "level": "beginner",
+    "prescription": "3x10 each",
+    "video_query": "dead bug exercise form"
+  },
+  {
+    "id": "hollow_hold",
+    "name": "Hollow body hold",
+    "type": "core",
+    "muscles": [
+      "core"
+    ],
+    "equipment": "none",
+    "level": "intermediate",
+    "prescription": "3x25s",
+    "video_query": "hollow body hold tutorial"
+  },
+  {
+    "id": "leg_raise",
+    "name": "Lying leg raise",
+    "type": "core",
+    "muscles": [
+      "lower abs",
+      "core"
+    ],
+    "equipment": "none",
+    "level": "intermediate",
+    "prescription": "3x12",
+    "video_query": "lying leg raise form"
+  },
+  {
+    "id": "bicycle_crunch",
+    "name": "Bicycle crunch",
+    "type": "core",
+    "muscles": [
+      "obliques",
+      "core"
+    ],
+    "equipment": "none",
+    "level": "beginner",
+    "prescription": "3x20",
+    "video_query": "bicycle crunch form"
+  },
+  {
+    "id": "mountain_climber",
+    "name": "Mountain climbers",
+    "type": "cardio",
+    "muscles": [
+      "core",
+      "shoulders"
+    ],
+    "equipment": "none",
+    "level": "beginner",
+    "prescription": "4x30s",
+    "video_query": "mountain climbers form"
+  },
+  {
+    "id": "burpee",
+    "name": "Burpee",
+    "type": "cardio",
+    "muscles": [
+      "full body"
+    ],
+    "equipment": "none",
+    "level": "intermediate",
+    "prescription": "4x10",
+    "video_query": "burpee proper form"
+  },
+  {
+    "id": "jump_squat",
+    "name": "Jump squat",
+    "type": "cardio",
+    "muscles": [
+      "quads",
+      "glutes"
+    ],
+    "equipment": "none",
+    "level": "intermediate",
+    "prescription": "4x12",
+    "video_query": "jump squat form"
+  },
+  {
+    "id": "high_knees",
+    "name": "High knees",
+    "type": "cardio",
+    "muscles": [
+      "full body"
+    ],
+    "equipment": "none",
+    "level": "beginner",
+    "prescription": "4x30s",
+    "video_query": "high knees exercise"
+  },
+  {
+    "id": "hip_flexor_stretch",
+    "name": "Kneeling hip flexor stretch",
+    "type": "mobility",
+    "muscles": [
+      "hips"
+    ],
+    "equipment": "none",
+    "level": "beginner",
+    "prescription": "2x45s each",
+    "video_query": "kneeling hip flexor stretch"
+  },
+  {
+    "id": "worlds_greatest",
+    "name": "World's greatest stretch",
+    "type": "mobility",
+    "muscles": [
+      "hips",
+      "thoracic spine"
+    ],
+    "equipment": "none",
+    "level": "beginner",
+    "prescription": "2x5 each",
+    "video_query": "worlds greatest stretch"
+  },
+  {
+    "id": "cat_cow",
+    "name": "Cat-cow",
+    "type": "mobility",
+    "muscles": [
+      "spine"
+    ],
+    "equipment": "none",
+    "level": "beginner",
+    "prescription": "2x10",
+    "video_query": "cat cow stretch"
+  }
+]

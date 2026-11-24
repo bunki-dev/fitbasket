@@ -1,0 +1,290 @@
+[
+  {
+    "key": "chicken_breast",
+    "name": "Chicken breast",
+    "unit": "g",
+    "category": "meat",
+    "animal_flags": [
+      "meat"
+    ]
+  },
+  {
+    "key": "beef_mince_lean",
+    "name": "Lean beef mince",
+    "unit": "g",
+    "category": "meat",
+    "animal_flags": [
+      "meat"
+    ]
+  },
+  {
+    "key": "salmon_fillet",
+    "name": "Salmon fillet",
+    "unit": "g",
+    "category": "seafood",
+    "animal_flags": [
+      "fish"
+    ]
+  },
+  {
+    "key": "canned_tuna",
+    "name": "Tuna in springwater",
+    "unit": "g",
+    "category": "pantry",
+    "animal_flags": [
+      "fish"
+    ]
+  },
+  {
+    "key": "tofu_firm",
+    "name": "Firm tofu",
+    "unit": "g",
+    "category": "chilled",
+    "animal_flags": []
+  },
+  {
+    "key": "eggs",
+    "name": "Eggs",
+    "unit": "each",
+    "category": "chilled",
+    "animal_flags": [
+      "egg"
+    ]
+  },
+  {
+    "key": "greek_yoghurt",
+    "name": "Greek yoghurt",
+    "unit": "g",
+    "category": "dairy",
+    "animal_flags": [
+      "dairy"
+    ]
+  },
+  {
+    "key": "milk",
+    "name": "Milk",
+    "unit": "ml",
+    "category": "dairy",
+    "animal_flags": [
+      "dairy"
+    ]
+  },
+  {
+    "key": "cheddar",
+    "name": "Cheddar cheese",
+    "unit": "g",
+    "category": "dairy",
+    "animal_flags": [
+      "dairy"
+    ]
+  },
+  {
+    "key": "feta",
+    "name": "Feta",
+    "unit": "g",
+    "category": "dairy",
+    "animal_flags": [
+      "dairy"
+    ]
+  },
+  {
+    "key": "rolled_oats",
+    "name": "Rolled oats",
+    "unit": "g",
+    "category": "pantry",
+    "animal_flags": []
+  },
+  {
+    "key": "brown_rice",
+    "name": "Brown rice",
+    "unit": "g",
+    "category": "pantry",
+    "animal_flags": []
+  },
+  {
+    "key": "wholemeal_pasta",
+    "name": "Wholemeal pasta",
+    "unit": "g",
+    "category": "pantry",
+    "animal_flags": []
+  },
+  {
+    "key": "wholemeal_wraps",
+    "name": "Wholemeal wraps",
+    "unit": "each",
+    "category": "bakery",
+    "animal_flags": []
+  },
+  {
+    "key": "wholemeal_bread",
+    "name": "Wholemeal bread",
+    "unit": "slice",
+    "category": "bakery",
+    "animal_flags": []
+  },
+  {
+    "key": "sweet_potato",
+    "name": "Sweet potato",
+    "unit": "g",
+    "category": "produce",
+    "animal_flags": []
+  },
+  {
+    "key": "banana",
+    "name": "Banana",
+    "unit": "each",
+    "category": "produce",
+    "animal_flags": []
+  },
+  {
+    "key": "berries_frozen",
+    "name": "Frozen mixed berries",
+    "unit": "g",
+    "category": "frozen",
+    "animal_flags": []
+  },
+  {
+    "key": "broccoli",
+    "name": "Broccoli",
+    "unit": "g",
+    "category": "produce",
+    "animal_flags": []
+  },
+  {
+    "key": "baby_spinach",
+    "name": "Baby spinach",
+    "unit": "g",
+    "category": "produce",
+    "animal_flags": []
+  },
+  {
+    "key": "mixed_salad",
+    "name": "Mixed salad leaves",
+    "unit": "g",
+    "category": "produce",
+    "animal_flags": []
+  },
+  {
+    "key": "capsicum",
+    "name": "Red capsicum",
+    "unit": "each",
+    "category": "produce",
+    "animal_flags": []
+  },
+  {
+    "key": "zucchini",
+    "name": "Zucchini",
+    "unit": "each",
+    "category": "produce",
+    "animal_flags": []
+  },
+  {
+    "key": "carrot",
+    "name": "Carrot",
+    "unit": "each",
+    "category": "produce",
+    "animal_flags": []
+  },
+  {
+    "key": "onion",
+    "name": "Brown onion",
+    "unit": "each",
+    "category": "produce",
+    "animal_flags": []
+  },
+  {
+    "key": "garlic",
+    "name": "Garlic clove",
+    "unit": "each",
+    "category": "produce",
+    "animal_flags": []
+  },
+  {
+    "key": "avocado",
+    "name": "Avocado",
+    "unit": "each",
+    "category": "produce",
+    "animal_flags": []
+  },
+  {
+    "key": "lemon",
+    "name": "Lemon",
+    "unit": "each",
+    "category": "produce",
+    "animal_flags": []
+  },
+  {
+    "key": "tomatoes_canned",
+    "name": "Diced tomatoes (canned)",
+    "unit": "g",
+    "category": "pantry",
+    "animal_flags": []
+  },
+  {
+    "key": "chickpeas_canned",
+    "name": "Chickpeas (canned)",
+    "unit": "g",
+    "category": "pantry",
+    "animal_flags": []
+  },
+  {
+    "key": "black_beans_canned",
+    "name": "Black beans (canned)",
+    "unit": "g",
+    "category": "pantry",
+    "animal_flags": []
+  },
+  {
+    "key": "olive_oil",
+    "name": "Olive oil",
+    "unit": "ml",
+    "category": "pantry",
+    "animal_flags": []
+  },
+  {
+    "key": "peanut_butter",
+    "name": "Peanut butter",
+    "unit": "g",
+    "category": "pantry",
+    "animal_flags": []
+  },
+  {
+    "key": "almonds",
+    "name": "Almonds",
+    "unit": "g",
+    "category": "pantry",
+    "animal_flags": []
+  },
+  {
+    "key": "honey",
+    "name": "Honey",
+    "unit": "g",
+    "category": "pantry",
+    "animal_flags": [
+      "bee"
+    ]
+  },
+  {
+    "key": "soy_sauce",
+    "name": "Soy sauce",
+    "unit": "ml",
+    "category": "pantry",
+    "animal_flags": []
+  },
+  {
+    "key": "taco_seasoning",
+    "name": "Taco seasoning",
+    "unit": "g",
+    "category": "pantry",
+    "animal_flags": []
+  },
+  {
+    "key": "whey_protein",
+    "name": "Whey protein powder",
+    "unit": "g",
+    "category": "health",
+    "animal_flags": [
+      "dairy"
+    ]
+  }
+]

@@ -1,0 +1,36 @@
+{
+  "profile": {
+    "name": "Alex",
+    "age": 31,
+    "sex": "male",
+    "height_cm": 175,
+    "weight_kg": 80,
+    "goal": "fat_loss",
+    "activity_level": "light",
+    "diet": "omnivore",
+    "allergies": [],
+    "dislikes": ["feta"],
+    "preferred_brands": {"chicken_breast": "Paddock Co", "greek_yoghurt": "Alpine Creamery"},
+    "avoid_brands": [],
+    "weekly_budget": 180,
+    "meals_per_day": ["breakfast", "lunch", "dinner", "snack"],
+    "max_prep_minutes": 35,
+    "training": {
+      "days_per_week": 4,
+      "session_minutes": 40,
+      "equipment": ["none", "dumbbells"],
+      "level": "beginner",
+      "focus": ["core", "fat_loss"],
+      "sport_days": ["Sat"],
+      "unavailable_days": ["Sun"]
+    }
+  },
+  "pantry": {
+    "olive_oil": 500,
+    "soy_sauce": 200,
+    "honey": 300,
+    "rolled_oats": 400,
+    "garlic": 6,
+    "brown_rice": 300
+  }
+}

@@ -1,0 +1,1176 @@
+[
+  {
+    "id": "p001",
+    "ingredient": "chicken_breast",
+    "brand": "Paddock Co",
+    "name": "Paddock Co Free Range Chicken Breast Fillets",
+    "pack_size": 500,
+    "unit": "g",
+    "price": 9.5,
+    "special_price": 7.0,
+    "special_label": "Weekly special",
+    "allergens": [],
+    "tags": [
+      "high_protein"
+    ]
+  },
+  {
+    "id": "p002",
+    "ingredient": "chicken_breast",
+    "brand": "Value Pick",
+    "name": "Value Pick Chicken Breast Fillets",
+    "pack_size": 1000,
+    "unit": "g",
+    "price": 13.0,
+    "special_price": null,
+    "special_label": null,
+    "allergens": [],
+    "tags": [
+      "high_protein"
+    ]
+  },
+  {
+    "id": "p003",
+    "ingredient": "chicken_breast",
+    "brand": "Paddock Co",
+    "name": "Paddock Co Free Range Chicken Breast Fillets Bulk",
+    "pack_size": 1000,
+    "unit": "g",
+    "price": 18.0,
+    "special_price": null,
+    "special_label": null,
+    "allergens": [],
+    "tags": [
+      "high_protein"
+    ]
+  },
+  {
+    "id": "p004",
+    "ingredient": "beef_mince_lean",
+    "brand": "Highland Grazing",
+    "name": "Highland Grazing Heart Smart 5 Star Beef Mince",
+    "pack_size": 500,
+    "unit": "g",
+    "price": 10.0,
+    "special_price": 8.0,
+    "special_label": "Weekly special",
+    "allergens": [],
+    "tags": [
+      "high_protein"
+    ]
+  },
+  {
+    "id": "p005",
+    "ingredient": "beef_mince_lean",
+    "brand": "Value Pick",
+    "name": "Value Pick Lean Beef Mince",
+    "pack_size": 500,
+    "unit": "g",
+    "price": 8.5,
+    "special_price": null,
+    "special_label": null,
+    "allergens": [],
+    "tags": [
+      "high_protein"
+    ]
+  },
+  {
+    "id": "p006",
+    "ingredient": "salmon_fillet",
+    "brand": "Southern Ocean",
+    "name": "Southern Ocean Tasmanian Salmon Portions 2pk",
+    "pack_size": 250,
+    "unit": "g",
+    "price": 12.0,
+    "special_price": 9.0,
+    "special_label": "Weekly special",
+    "allergens": [
+      "fish"
+    ],
+    "tags": [
+      "omega3"
+    ]
+  },
+  {
+    "id": "p007",
+    "ingredient": "salmon_fillet",
+    "brand": "Value Pick",
+    "name": "Value Pick Salmon Portions 4pk",
+    "pack_size": 500,
+    "unit": "g",
+    "price": 19.0,
+    "special_price": null,
+    "special_label": null,
+    "allergens": [
+      "fish"
+    ],
+    "tags": [
+      "omega3"
+    ]
+  },
+  {
+    "id": "p008",
+    "ingredient": "canned_tuna",
+    "brand": "Harbour Kitchen",
+    "name": "Harbour Kitchen Tuna in Springwater",
+    "pack_size": 95,
+    "unit": "g",
+    "price": 1.8,
+    "special_price": 1.2,
+    "special_label": "Weekly special",
+    "allergens": [
+      "fish"
+    ],
+    "tags": [
+      "high_protein"
+    ]
+  },
+  {
+    "id": "p009",
+    "ingredient": "canned_tuna",
+    "brand": "Harbour Kitchen",
+    "name": "Harbour Kitchen Tuna in Springwater Multipack",
+    "pack_size": 380,
+    "unit": "g",
+    "price": 6.5,
+    "special_price": null,
+    "special_label": null,
+    "allergens": [
+      "fish"
+    ],
+    "tags": [
+      "high_protein"
+    ]
+  },
+  {
+    "id": "p010",
+    "ingredient": "canned_tuna",
+    "brand": "Value Pick",
+    "name": "Value Pick Tuna Chunks in Springwater",
+    "pack_size": 425,
+    "unit": "g",
+    "price": 5.0,
+    "special_price": null,
+    "special_label": null,
+    "allergens": [
+      "fish"
+    ],
+    "tags": [
+      "high_protein"
+    ]
+  },
+  {
+    "id": "p011",
+    "ingredient": "tofu_firm",
+    "brand": "Green Valley",
+    "name": "Green Valley Organic Firm Tofu",
+    "pack_size": 450,
+    "unit": "g",
+    "price": 4.5,
+    "special_price": null,
+    "special_label": null,
+    "allergens": [
+      "soy"
+    ],
+    "tags": [
+      "vegan",
+      "high_protein"
+    ]
+  },
+  {
+    "id": "p012",
+    "ingredient": "tofu_firm",
+    "brand": "Lotus Garden",
+    "name": "Lotus Garden Firm Tofu",
+    "pack_size": 300,
+    "unit": "g",
+    "price": 3.2,
+    "special_price": 2.4,
+    "special_label": "Weekly special",
+    "allergens": [
+      "soy"
+    ],
+    "tags": [
+      "vegan",
+      "high_protein"
+    ]
+  },
+  {
+    "id": "p013",
+    "ingredient": "eggs",
+    "brand": "Sunny Hill Farm",
+    "name": "Sunny Hill Farm Free Range Eggs 12pk",
+    "pack_size": 12,
+    "unit": "each",
+    "price": 7.2,
+    "special_price": null,
+    "special_label": null,
+    "allergens": [
+      "egg"
+    ],
+    "tags": [
+      "vegetarian"
+    ]
+  },
+  {
+    "id": "p014",
+    "ingredient": "eggs",
+    "brand": "Value Pick",
+    "name": "Value Pick Cage Free Eggs 12pk",
+    "pack_size": 12,
+    "unit": "each",
+    "price": 5.4,
+    "special_price": null,
+    "special_label": null,
+    "allergens": [
+      "egg"
+    ],
+    "tags": [
+      "vegetarian"
+    ]
+  },
+  {
+    "id": "p015",
+    "ingredient": "eggs",
+    "brand": "Sunny Hill Farm",
+    "name": "Sunny Hill Farm Free Range Eggs 20pk",
+    "pack_size": 20,
+    "unit": "each",
+    "price": 11.0,
+    "special_price": 9.0,
+    "special_label": "Weekly special",
+    "allergens": [
+      "egg"
+    ],
+    "tags": [
+      "vegetarian"
+    ]
+  },
+  {
+    "id": "p016",
+    "ingredient": "greek_yoghurt",
+    "brand": "Alpine Creamery",
+    "name": "Alpine Creamery Greek Style Yoghurt No Added Sugar",
+    "pack_size": 1000,
+    "unit": "g",
+    "price": 7.0,
+    "special_price": 5.0,
+    "special_label": "Weekly special",
+    "allergens": [
+      "dairy"
+    ],
+    "tags": [
+      "high_protein",
+      "vegetarian"
+    ]
+  },
+  {
+    "id": "p017",
+    "ingredient": "greek_yoghurt",
+    "brand": "Value Pick",
+    "name": "Value Pick Greek Style Yoghurt",
+    "pack_size": 1000,
+    "unit": "g",
+    "price": 4.8,
+    "special_price": null,
+    "special_label": null,
+    "allergens": [
+      "dairy"
+    ],
+    "tags": [
+      "vegetarian"
+    ]
+  },
+  {
+    "id": "p018",
+    "ingredient": "greek_yoghurt",
+    "brand": "Green Valley",
+    "name": "Green Valley Coconut Yoghurt Plain",
+    "pack_size": 500,
+    "unit": "g",
+    "price": 6.5,
+    "special_price": null,
+    "special_label": null,
+    "allergens": [],
+    "tags": [
+      "vegan",
+      "dairy_free"
+    ]
+  },
+  {
+    "id": "p019",
+    "ingredient": "milk",
+    "brand": "Southern Cross Dairy",
+    "name": "Southern Cross Dairy Full Cream Milk",
+    "pack_size": 2000,
+    "unit": "ml",
+    "price": 3.6,
+    "special_price": null,
+    "special_label": null,
+    "allergens": [
+      "dairy"
+    ],
+    "tags": [
+      "vegetarian"
+    ]
+  },
+  {
+    "id": "p020",
+    "ingredient": "milk",
+    "brand": "Value Pick",
+    "name": "Value Pick Light Milk",
+    "pack_size": 2000,
+    "unit": "ml",
+    "price": 3.1,
+    "special_price": null,
+    "special_label": null,
+    "allergens": [
+      "dairy"
+    ],
+    "tags": [
+      "vegetarian"
+    ]
+  },
+  {
+    "id": "p021",
+    "ingredient": "milk",
+    "brand": "Green Valley",
+    "name": "Green Valley Unsweetened Almond Milk",
+    "pack_size": 1000,
+    "unit": "ml",
+    "price": 3.0,
+    "special_price": 2.0,
+    "special_label": "Weekly special",
+    "allergens": [
+      "tree_nut"
+    ],
+    "tags": [
+      "vegan",
+      "dairy_free"
+    ]
+  },
+  {
+    "id": "p022",
+    "ingredient": "milk",
+    "brand": "Lotus Garden",
+    "name": "Lotus Garden Soy Milk",
+    "pack_size": 1000,
+    "unit": "ml",
+    "price": 2.8,
+    "special_price": null,
+    "special_label": null,
+    "allergens": [
+      "soy"
+    ],
+    "tags": [
+      "vegan",
+      "dairy_free"
+    ]
+  },
+  {
+    "id": "p023",
+    "ingredient": "cheddar",
+    "brand": "Southern Cross Dairy",
+    "name": "Southern Cross Dairy Tasty Cheddar Block",
+    "pack_size": 500,
+    "unit": "g",
+    "price": 9.0,
+    "special_price": 6.5,
+    "special_label": "Weekly special",
+    "allergens": [
+      "dairy"
+    ],
+    "tags": [
+      "vegetarian"
+    ]
+  },
+  {
+    "id": "p024",
+    "ingredient": "cheddar",
+    "brand": "Value Pick",
+    "name": "Value Pick Tasty Cheese Grated",
+    "pack_size": 250,
+    "unit": "g",
+    "price": 4.2,
+    "special_price": null,
+    "special_label": null,
+    "allergens": [
+      "dairy"
+    ],
+    "tags": [
+      "vegetarian"
+    ]
+  },
+  {
+    "id": "p025",
+    "ingredient": "feta",
+    "brand": "Alpine Creamery",
+    "name": "Alpine Creamery Danish Style Feta",
+    "pack_size": 200,
+    "unit": "g",
+    "price": 5.5,
+    "special_price": null,
+    "special_label": null,
+    "allergens": [
+      "dairy"
+    ],
+    "tags": [
+      "vegetarian"
+    ]
+  },
+  {
+    "id": "p026",
+    "ingredient": "rolled_oats",
+    "brand": "Morning Mill",
+    "name": "Morning Mill Traditional Rolled Oats",
+    "pack_size": 750,
+    "unit": "g",
+    "price": 4.2,
+    "special_price": 3.0,
+    "special_label": "Weekly special",
+    "allergens": [
+      "gluten"
+    ],
+    "tags": [
+      "vegan"
+    ]
+  },
+  {
+    "id": "p027",
+    "ingredient": "rolled_oats",
+    "brand": "Value Pick",
+    "name": "Value Pick Rolled Oats",
+    "pack_size": 1000,
+    "unit": "g",
+    "price": 2.8,
+    "special_price": null,
+    "special_label": null,
+    "allergens": [
+      "gluten"
+    ],
+    "tags": [
+      "vegan"
+    ]
+  },
+  {
+    "id": "p028",
+    "ingredient": "rolled_oats",
+    "brand": "Morning Mill",
+    "name": "Morning Mill Gluten Free Oats",
+    "pack_size": 500,
+    "unit": "g",
+    "price": 6.5,
+    "special_price": null,
+    "special_label": null,
+    "allergens": [],
+    "tags": [
+      "vegan",
+      "gluten_free"
+    ]
+  },
+  {
+    "id": "p029",
+    "ingredient": "brown_rice",
+    "brand": "Riverland Grains",
+    "name": "Riverland Grains Australian Brown Rice",
+    "pack_size": 1000,
+    "unit": "g",
+    "price": 4.0,
+    "special_price": null,
+    "special_label": null,
+    "allergens": [],
+    "tags": [
+      "vegan",
+      "gluten_free"
+    ]
+  },
+  {
+    "id": "p030",
+    "ingredient": "brown_rice",
+    "brand": "Value Pick",
+    "name": "Value Pick Brown Rice",
+    "pack_size": 1000,
+    "unit": "g",
+    "price": 2.9,
+    "special_price": null,
+    "special_label": null,
+    "allergens": [],
+    "tags": [
+      "vegan",
+      "gluten_free"
+    ]
+  },
+  {
+    "id": "p031",
+    "ingredient": "brown_rice",
+    "brand": "Riverland Grains",
+    "name": "Riverland Grains Microwave Brown Rice Cups 2pk",
+    "pack_size": 250,
+    "unit": "g",
+    "price": 3.5,
+    "special_price": 2.5,
+    "special_label": "Weekly special",
+    "allergens": [],
+    "tags": [
+      "vegan",
+      "gluten_free",
+      "quick"
+    ]
+  },
+  {
+    "id": "p032",
+    "ingredient": "wholemeal_pasta",
+    "brand": "Nonna's Table",
+    "name": "Nonna's Table Wholemeal Penne",
+    "pack_size": 500,
+    "unit": "g",
+    "price": 3.5,
+    "special_price": 2.0,
+    "special_label": "Weekly special",
+    "allergens": [
+      "gluten"
+    ],
+    "tags": [
+      "vegan"
+    ]
+  },
+  {
+    "id": "p033",
+    "ingredient": "wholemeal_pasta",
+    "brand": "Value Pick",
+    "name": "Value Pick Wholemeal Spaghetti",
+    "pack_size": 500,
+    "unit": "g",
+    "price": 1.6,
+    "special_price": null,
+    "special_label": null,
+    "allergens": [
+      "gluten"
+    ],
+    "tags": [
+      "vegan"
+    ]
+  },
+  {
+    "id": "p034",
+    "ingredient": "wholemeal_pasta",
+    "brand": "Nonna's Table",
+    "name": "Nonna's Table Gluten Free Penne",
+    "pack_size": 500,
+    "unit": "g",
+    "price": 4.0,
+    "special_price": null,
+    "special_label": null,
+    "allergens": [],
+    "tags": [
+      "vegan",
+      "gluten_free"
+    ]
+  },
+  {
+    "id": "p035",
+    "ingredient": "wholemeal_wraps",
+    "brand": "Golden Crust",
+    "name": "Golden Crust Wholemeal Wraps 8pk",
+    "pack_size": 8,
+    "unit": "each",
+    "price": 4.5,
+    "special_price": 3.5,
+    "special_label": "Weekly special",
+    "allergens": [
+      "gluten"
+    ],
+    "tags": [
+      "vegan"
+    ]
+  },
+  {
+    "id": "p036",
+    "ingredient": "wholemeal_wraps",
+    "brand": "Value Pick",
+    "name": "Value Pick Wholemeal Wraps 8pk",
+    "pack_size": 8,
+    "unit": "each",
+    "price": 2.8,
+    "special_price": null,
+    "special_label": null,
+    "allergens": [
+      "gluten"
+    ],
+    "tags": [
+      "vegan"
+    ]
+  },
+  {
+    "id": "p037",
+    "ingredient": "wholemeal_wraps",
+    "brand": "Golden Crust",
+    "name": "Golden Crust Gluten Free Wraps 6pk",
+    "pack_size": 6,
+    "unit": "each",
+    "price": 6.0,
+    "special_price": null,
+    "special_label": null,
+    "allergens": [],
+    "tags": [
+      "vegan",
+      "gluten_free"
+    ]
+  },
+  {
+    "id": "p038",
+    "ingredient": "wholemeal_bread",
+    "brand": "Golden Crust",
+    "name": "Golden Crust Wholemeal Sandwich Loaf (18 slices)",
+    "pack_size": 18,
+    "unit": "slice",
+    "price": 4.5,
+    "special_price": 3.4,
+    "special_label": "Weekly special",
+    "allergens": [
+      "gluten"
+    ],
+    "tags": [
+      "vegan"
+    ]
+  },
+  {
+    "id": "p039",
+    "ingredient": "wholemeal_bread",
+    "brand": "Value Pick",
+    "name": "Value Pick Wholemeal Bread (20 slices)",
+    "pack_size": 20,
+    "unit": "slice",
+    "price": 2.5,
+    "special_price": null,
+    "special_label": null,
+    "allergens": [
+      "gluten"
+    ],
+    "tags": [
+      "vegan"
+    ]
+  },
+  {
+    "id": "p040",
+    "ingredient": "sweet_potato",
+    "brand": "Fresh Fields",
+    "name": "Fresh Fields Gold Sweet Potato (per kg)",
+    "pack_size": 1000,
+    "unit": "g",
+    "price": 4.0,
+    "special_price": 3.0,
+    "special_label": "Weekly special",
+    "allergens": [],
+    "tags": [
+      "vegan",
+      "gluten_free"
+    ]
+  },
+  {
+    "id": "p041",
+    "ingredient": "banana",
+    "brand": "Fresh Fields",
+    "name": "Fresh Fields Cavendish Bananas (each)",
+    "pack_size": 1,
+    "unit": "each",
+    "price": 0.7,
+    "special_price": null,
+    "special_label": null,
+    "allergens": [],
+    "tags": [
+      "vegan",
+      "gluten_free"
+    ]
+  },
+  {
+    "id": "p042",
+    "ingredient": "berries_frozen",
+    "brand": "Frosty Farm",
+    "name": "Frosty Farm Frozen Mixed Berries",
+    "pack_size": 500,
+    "unit": "g",
+    "price": 6.0,
+    "special_price": 4.5,
+    "special_label": "Weekly special",
+    "allergens": [],
+    "tags": [
+      "vegan",
+      "gluten_free"
+    ]
+  },
+  {
+    "id": "p043",
+    "ingredient": "berries_frozen",
+    "brand": "Value Pick",
+    "name": "Value Pick Frozen Mixed Berries",
+    "pack_size": 1000,
+    "unit": "g",
+    "price": 9.0,
+    "special_price": null,
+    "special_label": null,
+    "allergens": [],
+    "tags": [
+      "vegan",
+      "gluten_free"
+    ]
+  },
+  {
+    "id": "p044",
+    "ingredient": "broccoli",
+    "brand": "Fresh Fields",
+    "name": "Fresh Fields Broccoli (per kg)",
+    "pack_size": 1000,
+    "unit": "g",
+    "price": 6.9,
+    "special_price": null,
+    "special_label": null,
+    "allergens": [],
+    "tags": [
+      "vegan",
+      "gluten_free"
+    ]
+  },
+  {
+    "id": "p045",
+    "ingredient": "broccoli",
+    "brand": "Frosty Farm",
+    "name": "Frosty Farm Frozen Broccoli Florets",
+    "pack_size": 500,
+    "unit": "g",
+    "price": 3.5,
+    "special_price": 2.8,
+    "special_label": "Weekly special",
+    "allergens": [],
+    "tags": [
+      "vegan",
+      "gluten_free"
+    ]
+  },
+  {
+    "id": "p046",
+    "ingredient": "baby_spinach",
+    "brand": "Fresh Fields",
+    "name": "Fresh Fields Baby Spinach",
+    "pack_size": 120,
+    "unit": "g",
+    "price": 3.0,
+    "special_price": 2.0,
+    "special_label": "Weekly special",
+    "allergens": [],
+    "tags": [
+      "vegan",
+      "gluten_free"
+    ]
+  },
+  {
+    "id": "p047",
+    "ingredient": "baby_spinach",
+    "brand": "Fresh Fields",
+    "name": "Fresh Fields Baby Spinach Family Bag",
+    "pack_size": 280,
+    "unit": "g",
+    "price": 5.0,
+    "special_price": null,
+    "special_label": null,
+    "allergens": [],
+    "tags": [
+      "vegan",
+      "gluten_free"
+    ]
+  },
+  {
+    "id": "p048",
+    "ingredient": "mixed_salad",
+    "brand": "Fresh Fields",
+    "name": "Fresh Fields Mixed Salad Leaves",
+    "pack_size": 200,
+    "unit": "g",
+    "price": 4.0,
+    "special_price": null,
+    "special_label": null,
+    "allergens": [],
+    "tags": [
+      "vegan",
+      "gluten_free"
+    ]
+  },
+  {
+    "id": "p049",
+    "ingredient": "capsicum",
+    "brand": "Fresh Fields",
+    "name": "Fresh Fields Red Capsicum (each)",
+    "pack_size": 1,
+    "unit": "each",
+    "price": 1.8,
+    "special_price": 1.2,
+    "special_label": "Weekly special",
+    "allergens": [],
+    "tags": [
+      "vegan",
+      "gluten_free"
+    ]
+  },
+  {
+    "id": "p050",
+    "ingredient": "zucchini",
+    "brand": "Fresh Fields",
+    "name": "Fresh Fields Zucchini (each)",
+    "pack_size": 1,
+    "unit": "each",
+    "price": 1.2,
+    "special_price": null,
+    "special_label": null,
+    "allergens": [],
+    "tags": [
+      "vegan",
+      "gluten_free"
+    ]
+  },
+  {
+    "id": "p051",
+    "ingredient": "carrot",
+    "brand": "Fresh Fields",
+    "name": "Fresh Fields Carrots 1kg Bag (~7)",
+    "pack_size": 7,
+    "unit": "each",
+    "price": 2.5,
+    "special_price": null,
+    "special_label": null,
+    "allergens": [],
+    "tags": [
+      "vegan",
+      "gluten_free"
+    ]
+  },
+  {
+    "id": "p052",
+    "ingredient": "onion",
+    "brand": "Fresh Fields",
+    "name": "Fresh Fields Brown Onions 1kg Bag (~6)",
+    "pack_size": 6,
+    "unit": "each",
+    "price": 3.0,
+    "special_price": null,
+    "special_label": null,
+    "allergens": [],
+    "tags": [
+      "vegan",
+      "gluten_free"
+    ]
+  },
+  {
+    "id": "p053",
+    "ingredient": "garlic",
+    "brand": "Fresh Fields",
+    "name": "Fresh Fields Garlic Bulb (~10 cloves)",
+    "pack_size": 10,
+    "unit": "each",
+    "price": 1.5,
+    "special_price": null,
+    "special_label": null,
+    "allergens": [],
+    "tags": [
+      "vegan",
+      "gluten_free"
+    ]
+  },
+  {
+    "id": "p054",
+    "ingredient": "avocado",
+    "brand": "Fresh Fields",
+    "name": "Fresh Fields Hass Avocado (each)",
+    "pack_size": 1,
+    "unit": "each",
+    "price": 2.5,
+    "special_price": 1.5,
+    "special_label": "Weekly special",
+    "allergens": [],
+    "tags": [
+      "vegan",
+      "gluten_free"
+    ]
+  },
+  {
+    "id": "p055",
+    "ingredient": "lemon",
+    "brand": "Fresh Fields",
+    "name": "Fresh Fields Lemon (each)",
+    "pack_size": 1,
+    "unit": "each",
+    "price": 1.0,
+    "special_price": null,
+    "special_label": null,
+    "allergens": [],
+    "tags": [
+      "vegan",
+      "gluten_free"
+    ]
+  },
+  {
+    "id": "p056",
+    "ingredient": "tomatoes_canned",
+    "brand": "Nonna's Table",
+    "name": "Nonna's Table Italian Diced Tomatoes",
+    "pack_size": 400,
+    "unit": "g",
+    "price": 1.8,
+    "special_price": 1.2,
+    "special_label": "Weekly special",
+    "allergens": [],
+    "tags": [
+      "vegan",
+      "gluten_free"
+    ]
+  },
+  {
+    "id": "p057",
+    "ingredient": "tomatoes_canned",
+    "brand": "Value Pick",
+    "name": "Value Pick Diced Tomatoes",
+    "pack_size": 400,
+    "unit": "g",
+    "price": 0.9,
+    "special_price": null,
+    "special_label": null,
+    "allergens": [],
+    "tags": [
+      "vegan",
+      "gluten_free"
+    ]
+  },
+  {
+    "id": "p058",
+    "ingredient": "chickpeas_canned",
+    "brand": "Harvest Pantry",
+    "name": "Harvest Pantry Chickpeas No Added Salt",
+    "pack_size": 400,
+    "unit": "g",
+    "price": 1.6,
+    "special_price": null,
+    "special_label": null,
+    "allergens": [],
+    "tags": [
+      "vegan",
+      "gluten_free"
+    ]
+  },
+  {
+    "id": "p059",
+    "ingredient": "chickpeas_canned",
+    "brand": "Value Pick",
+    "name": "Value Pick Chickpeas",
+    "pack_size": 400,
+    "unit": "g",
+    "price": 0.9,
+    "special_price": null,
+    "special_label": null,
+    "allergens": [],
+    "tags": [
+      "vegan",
+      "gluten_free"
+    ]
+  },
+  {
+    "id": "p060",
+    "ingredient": "black_beans_canned",
+    "brand": "Harvest Pantry",
+    "name": "Harvest Pantry Black Beans",
+    "pack_size": 400,
+    "unit": "g",
+    "price": 1.8,
+    "special_price": 1.3,
+    "special_label": "Weekly special",
+    "allergens": [],
+    "tags": [
+      "vegan",
+      "gluten_free"
+    ]
+  },
+  {
+    "id": "p061",
+    "ingredient": "olive_oil",
+    "brand": "Coastal Grove",
+    "name": "Coastal Grove Extra Virgin Olive Oil",
+    "pack_size": 750,
+    "unit": "ml",
+    "price": 14.0,
+    "special_price": 10.0,
+    "special_label": "Weekly special",
+    "allergens": [],
+    "tags": [
+      "vegan",
+      "gluten_free"
+    ]
+  },
+  {
+    "id": "p062",
+    "ingredient": "olive_oil",
+    "brand": "Value Pick",
+    "name": "Value Pick Extra Virgin Olive Oil",
+    "pack_size": 1000,
+    "unit": "ml",
+    "price": 13.5,
+    "special_price": null,
+    "special_label": null,
+    "allergens": [],
+    "tags": [
+      "vegan",
+      "gluten_free"
+    ]
+  },
+  {
+    "id": "p063",
+    "ingredient": "peanut_butter",
+    "brand": "Nutty Bros",
+    "name": "Nutty Bros Natural Smooth Peanut Butter",
+    "pack_size": 380,
+    "unit": "g",
+    "price": 5.5,
+    "special_price": 4.0,
+    "special_label": "Weekly special",
+    "allergens": [
+      "peanut"
+    ],
+    "tags": [
+      "vegan"
+    ]
+  },
+  {
+    "id": "p064",
+    "ingredient": "peanut_butter",
+    "brand": "Value Pick",
+    "name": "Value Pick Smooth Peanut Butter",
+    "pack_size": 500,
+    "unit": "g",
+    "price": 3.5,
+    "special_price": null,
+    "special_label": null,
+    "allergens": [
+      "peanut"
+    ],
+    "tags": [
+      "vegan"
+    ]
+  },
+  {
+    "id": "p065",
+    "ingredient": "almonds",
+    "brand": "Nutty Bros",
+    "name": "Nutty Bros Natural Almonds",
+    "pack_size": 400,
+    "unit": "g",
+    "price": 9.0,
+    "special_price": 7.0,
+    "special_label": "Weekly special",
+    "allergens": [
+      "tree_nut"
+    ],
+    "tags": [
+      "vegan",
+      "gluten_free"
+    ]
+  },
+  {
+    "id": "p066",
+    "ingredient": "honey",
+    "brand": "Golden Hive",
+    "name": "Golden Hive Australian Pure Honey",
+    "pack_size": 500,
+    "unit": "g",
+    "price": 7.5,
+    "special_price": null,
+    "special_label": null,
+    "allergens": [],
+    "tags": [
+      "vegetarian",
+      "gluten_free"
+    ]
+  },
+  {
+    "id": "p067",
+    "ingredient": "soy_sauce",
+    "brand": "Lotus Garden",
+    "name": "Lotus Garden Salt Reduced Soy Sauce",
+    "pack_size": 250,
+    "unit": "ml",
+    "price": 3.2,
+    "special_price": null,
+    "special_label": null,
+    "allergens": [
+      "soy",
+      "gluten"
+    ],
+    "tags": [
+      "vegan"
+    ]
+  },
+  {
+    "id": "p068",
+    "ingredient": "soy_sauce",
+    "brand": "Lotus Garden",
+    "name": "Lotus Garden Gluten Free Tamari",
+    "pack_size": 250,
+    "unit": "ml",
+    "price": 4.5,
+    "special_price": null,
+    "special_label": null,
+    "allergens": [
+      "soy"
+    ],
+    "tags": [
+      "vegan",
+      "gluten_free"
+    ]
+  },
+  {
+    "id": "p069",
+    "ingredient": "taco_seasoning",
+    "brand": "Fiesta Pantry",
+    "name": "Fiesta Pantry Taco Spice Mix",
+    "pack_size": 35,
+    "unit": "g",
+    "price": 1.5,
+    "special_price": 1.0,
+    "special_label": "Weekly special",
+    "allergens": [],
+    "tags": [
+      "vegan",
+      "gluten_free"
+    ]
+  },
+  {
+    "id": "p070",
+    "ingredient": "whey_protein",
+    "brand": "Peak Fuel",
+    "name": "Peak Fuel Whey Protein Isolate Vanilla",
+    "pack_size": 1000,
+    "unit": "g",
+    "price": 55.0,
+    "special_price": 42.0,
+    "special_label": "Weekly special",
+    "allergens": [
+      "dairy"
+    ],
+    "tags": [
+      "high_protein"
+    ]
+  },
+  {
+    "id": "p071",
+    "ingredient": "whey_protein",
+    "brand": "Value Pick",
+    "name": "Value Pick Whey Protein Concentrate",
+    "pack_size": 1000,
+    "unit": "g",
+    "price": 35.0,
+    "special_price": null,
+    "special_label": null,
+    "allergens": [
+      "dairy"
+    ],
+    "tags": [
+      "high_protein"
+    ]
+  }
+]

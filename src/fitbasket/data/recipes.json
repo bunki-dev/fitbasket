@@ -1,0 +1,756 @@
+[
+  {
+    "id": "overnight_oats",
+    "name": "Protein Overnight Oats",
+    "meal_type": "breakfast",
+    "minutes": 10,
+    "ingredients": [
+      {
+        "ingredient": "rolled_oats",
+        "qty": 60
+      },
+      {
+        "ingredient": "greek_yoghurt",
+        "qty": 150
+      },
+      {
+        "ingredient": "milk",
+        "qty": 100
+      },
+      {
+        "ingredient": "berries_frozen",
+        "qty": 80
+      },
+      {
+        "ingredient": "honey",
+        "qty": 10
+      }
+    ],
+    "per_serve": {
+      "kcal": 480,
+      "protein_g": 32,
+      "carbs_g": 66,
+      "fat_g": 9
+    },
+    "steps": [
+      "Mix oats, yoghurt and milk in a jar.",
+      "Top with berries and honey.",
+      "Refrigerate overnight."
+    ]
+  },
+  {
+    "id": "egg_spinach_toast",
+    "name": "Eggs & Spinach on Toast",
+    "meal_type": "breakfast",
+    "minutes": 10,
+    "ingredients": [
+      {
+        "ingredient": "eggs",
+        "qty": 3
+      },
+      {
+        "ingredient": "wholemeal_bread",
+        "qty": 2
+      },
+      {
+        "ingredient": "baby_spinach",
+        "qty": 40
+      },
+      {
+        "ingredient": "olive_oil",
+        "qty": 5
+      }
+    ],
+    "per_serve": {
+      "kcal": 440,
+      "protein_g": 27,
+      "carbs_g": 30,
+      "fat_g": 22
+    },
+    "steps": [
+      "Toast the bread.",
+      "Wilt spinach in a pan with oil.",
+      "Scramble or poach eggs and serve on toast."
+    ]
+  },
+  {
+    "id": "pb_banana_smoothie",
+    "name": "PB Banana Protein Smoothie",
+    "meal_type": "breakfast",
+    "minutes": 5,
+    "ingredients": [
+      {
+        "ingredient": "banana",
+        "qty": 1
+      },
+      {
+        "ingredient": "milk",
+        "qty": 300
+      },
+      {
+        "ingredient": "whey_protein",
+        "qty": 30
+      },
+      {
+        "ingredient": "peanut_butter",
+        "qty": 15
+      },
+      {
+        "ingredient": "rolled_oats",
+        "qty": 30
+      }
+    ],
+    "per_serve": {
+      "kcal": 560,
+      "protein_g": 44,
+      "carbs_g": 62,
+      "fat_g": 16
+    },
+    "steps": [
+      "Blend everything with a handful of ice until smooth."
+    ]
+  },
+  {
+    "id": "tofu_scramble",
+    "name": "Turmeric Tofu Scramble Wrap",
+    "meal_type": "breakfast",
+    "minutes": 15,
+    "ingredients": [
+      {
+        "ingredient": "tofu_firm",
+        "qty": 150
+      },
+      {
+        "ingredient": "baby_spinach",
+        "qty": 40
+      },
+      {
+        "ingredient": "capsicum",
+        "qty": 0.5
+      },
+      {
+        "ingredient": "wholemeal_wraps",
+        "qty": 1
+      },
+      {
+        "ingredient": "olive_oil",
+        "qty": 5
+      }
+    ],
+    "per_serve": {
+      "kcal": 420,
+      "protein_g": 26,
+      "carbs_g": 32,
+      "fat_g": 20
+    },
+    "steps": [
+      "Crumble tofu into a hot oiled pan.",
+      "Add sliced capsicum and spinach; season.",
+      "Wrap and serve."
+    ]
+  },
+  {
+    "id": "yoghurt_bowl",
+    "name": "Greek Yoghurt Berry Bowl",
+    "meal_type": "breakfast",
+    "minutes": 5,
+    "ingredients": [
+      {
+        "ingredient": "greek_yoghurt",
+        "qty": 200
+      },
+      {
+        "ingredient": "berries_frozen",
+        "qty": 100
+      },
+      {
+        "ingredient": "almonds",
+        "qty": 20
+      },
+      {
+        "ingredient": "honey",
+        "qty": 10
+      }
+    ],
+    "per_serve": {
+      "kcal": 400,
+      "protein_g": 26,
+      "carbs_g": 36,
+      "fat_g": 17
+    },
+    "steps": [
+      "Spoon yoghurt into a bowl.",
+      "Top with berries, chopped almonds and honey."
+    ]
+  },
+  {
+    "id": "chicken_burrito_bowl",
+    "name": "Chicken Burrito Bowl",
+    "meal_type": "lunch",
+    "minutes": 25,
+    "ingredients": [
+      {
+        "ingredient": "chicken_breast",
+        "qty": 150
+      },
+      {
+        "ingredient": "brown_rice",
+        "qty": 70
+      },
+      {
+        "ingredient": "black_beans_canned",
+        "qty": 80
+      },
+      {
+        "ingredient": "capsicum",
+        "qty": 0.5
+      },
+      {
+        "ingredient": "avocado",
+        "qty": 0.5
+      },
+      {
+        "ingredient": "taco_seasoning",
+        "qty": 5
+      }
+    ],
+    "per_serve": {
+      "kcal": 640,
+      "protein_g": 50,
+      "carbs_g": 66,
+      "fat_g": 18
+    },
+    "steps": [
+      "Cook rice.",
+      "Season and pan-fry chicken with taco spice.",
+      "Warm beans; slice capsicum and avocado.",
+      "Assemble bowls."
+    ]
+  },
+  {
+    "id": "tuna_salad_wrap",
+    "name": "Tuna Salad Wrap",
+    "meal_type": "lunch",
+    "minutes": 10,
+    "ingredients": [
+      {
+        "ingredient": "canned_tuna",
+        "qty": 95
+      },
+      {
+        "ingredient": "wholemeal_wraps",
+        "qty": 1
+      },
+      {
+        "ingredient": "mixed_salad",
+        "qty": 40
+      },
+      {
+        "ingredient": "carrot",
+        "qty": 0.5
+      },
+      {
+        "ingredient": "greek_yoghurt",
+        "qty": 30
+      },
+      {
+        "ingredient": "lemon",
+        "qty": 0.25
+      }
+    ],
+    "per_serve": {
+      "kcal": 390,
+      "protein_g": 33,
+      "carbs_g": 34,
+      "fat_g": 10
+    },
+    "steps": [
+      "Mix tuna with yoghurt and lemon juice.",
+      "Grate carrot.",
+      "Fill wrap with salad, carrot and tuna."
+    ]
+  },
+  {
+    "id": "chickpea_feta_salad",
+    "name": "Chickpea, Feta & Spinach Salad",
+    "meal_type": "lunch",
+    "minutes": 10,
+    "ingredients": [
+      {
+        "ingredient": "chickpeas_canned",
+        "qty": 150
+      },
+      {
+        "ingredient": "feta",
+        "qty": 40
+      },
+      {
+        "ingredient": "baby_spinach",
+        "qty": 50
+      },
+      {
+        "ingredient": "capsicum",
+        "qty": 0.5
+      },
+      {
+        "ingredient": "olive_oil",
+        "qty": 10
+      },
+      {
+        "ingredient": "lemon",
+        "qty": 0.25
+      }
+    ],
+    "per_serve": {
+      "kcal": 470,
+      "protein_g": 20,
+      "carbs_g": 36,
+      "fat_g": 26
+    },
+    "steps": [
+      "Rinse chickpeas.",
+      "Toss with spinach, capsicum and crumbled feta.",
+      "Dress with oil and lemon."
+    ]
+  },
+  {
+    "id": "chicken_pesto_pasta",
+    "name": "Chicken & Broccoli Pasta",
+    "meal_type": "lunch",
+    "minutes": 20,
+    "ingredients": [
+      {
+        "ingredient": "wholemeal_pasta",
+        "qty": 80
+      },
+      {
+        "ingredient": "chicken_breast",
+        "qty": 130
+      },
+      {
+        "ingredient": "broccoli",
+        "qty": 100
+      },
+      {
+        "ingredient": "olive_oil",
+        "qty": 10
+      },
+      {
+        "ingredient": "garlic",
+        "qty": 1
+      },
+      {
+        "ingredient": "cheddar",
+        "qty": 15
+      }
+    ],
+    "per_serve": {
+      "kcal": 650,
+      "protein_g": 52,
+      "carbs_g": 64,
+      "fat_g": 19
+    },
+    "steps": [
+      "Boil pasta, adding broccoli for the last 3 minutes.",
+      "Pan-fry diced chicken with garlic and oil.",
+      "Toss together and top with cheese."
+    ]
+  },
+  {
+    "id": "black_bean_wrap",
+    "name": "Black Bean & Avocado Wrap",
+    "meal_type": "lunch",
+    "minutes": 10,
+    "ingredients": [
+      {
+        "ingredient": "black_beans_canned",
+        "qty": 100
+      },
+      {
+        "ingredient": "wholemeal_wraps",
+        "qty": 1
+      },
+      {
+        "ingredient": "avocado",
+        "qty": 0.5
+      },
+      {
+        "ingredient": "mixed_salad",
+        "qty": 40
+      },
+      {
+        "ingredient": "taco_seasoning",
+        "qty": 3
+      }
+    ],
+    "per_serve": {
+      "kcal": 450,
+      "protein_g": 16,
+      "carbs_g": 52,
+      "fat_g": 18
+    },
+    "steps": [
+      "Mash beans with taco spice.",
+      "Fill wrap with beans, avocado and salad."
+    ]
+  },
+  {
+    "id": "salmon_sweet_potato",
+    "name": "Salmon, Sweet Potato & Greens",
+    "meal_type": "dinner",
+    "minutes": 30,
+    "ingredients": [
+      {
+        "ingredient": "salmon_fillet",
+        "qty": 150
+      },
+      {
+        "ingredient": "sweet_potato",
+        "qty": 200
+      },
+      {
+        "ingredient": "broccoli",
+        "qty": 120
+      },
+      {
+        "ingredient": "olive_oil",
+        "qty": 5
+      },
+      {
+        "ingredient": "lemon",
+        "qty": 0.25
+      }
+    ],
+    "per_serve": {
+      "kcal": 590,
+      "protein_g": 39,
+      "carbs_g": 44,
+      "fat_g": 26
+    },
+    "steps": [
+      "Roast cubed sweet potato at 200C for 25 min.",
+      "Pan-fry salmon skin-side down.",
+      "Steam broccoli; serve with lemon."
+    ]
+  },
+  {
+    "id": "beef_stir_fry",
+    "name": "Beef & Veg Stir-Fry",
+    "meal_type": "dinner",
+    "minutes": 20,
+    "ingredients": [
+      {
+        "ingredient": "beef_mince_lean",
+        "qty": 150
+      },
+      {
+        "ingredient": "brown_rice",
+        "qty": 70
+      },
+      {
+        "ingredient": "capsicum",
+        "qty": 0.5
+      },
+      {
+        "ingredient": "zucchini",
+        "qty": 0.5
+      },
+      {
+        "ingredient": "carrot",
+        "qty": 0.5
+      },
+      {
+        "ingredient": "soy_sauce",
+        "qty": 15
+      },
+      {
+        "ingredient": "garlic",
+        "qty": 1
+      }
+    ],
+    "per_serve": {
+      "kcal": 610,
+      "protein_g": 42,
+      "carbs_g": 62,
+      "fat_g": 19
+    },
+    "steps": [
+      "Cook rice.",
+      "Brown mince with garlic.",
+      "Add sliced veg and soy; stir-fry 5 min.",
+      "Serve over rice."
+    ]
+  },
+  {
+    "id": "chicken_tray_bake",
+    "name": "Lemon Chicken Tray Bake",
+    "meal_type": "dinner",
+    "minutes": 35,
+    "ingredients": [
+      {
+        "ingredient": "chicken_breast",
+        "qty": 170
+      },
+      {
+        "ingredient": "sweet_potato",
+        "qty": 150
+      },
+      {
+        "ingredient": "zucchini",
+        "qty": 0.5
+      },
+      {
+        "ingredient": "onion",
+        "qty": 0.5
+      },
+      {
+        "ingredient": "olive_oil",
+        "qty": 10
+      },
+      {
+        "ingredient": "lemon",
+        "qty": 0.5
+      }
+    ],
+    "per_serve": {
+      "kcal": 560,
+      "protein_g": 47,
+      "carbs_g": 40,
+      "fat_g": 21
+    },
+    "steps": [
+      "Chop veg and chicken; toss with oil and lemon.",
+      "Roast at 200C for 30 min."
+    ]
+  },
+  {
+    "id": "tofu_veg_curry",
+    "name": "Tofu & Chickpea Tomato Curry",
+    "meal_type": "dinner",
+    "minutes": 25,
+    "ingredients": [
+      {
+        "ingredient": "tofu_firm",
+        "qty": 150
+      },
+      {
+        "ingredient": "chickpeas_canned",
+        "qty": 100
+      },
+      {
+        "ingredient": "tomatoes_canned",
+        "qty": 200
+      },
+      {
+        "ingredient": "baby_spinach",
+        "qty": 40
+      },
+      {
+        "ingredient": "onion",
+        "qty": 0.5
+      },
+      {
+        "ingredient": "brown_rice",
+        "qty": 60
+      }
+    ],
+    "per_serve": {
+      "kcal": 580,
+      "protein_g": 30,
+      "carbs_g": 70,
+      "fat_g": 17
+    },
+    "steps": [
+      "Cook rice.",
+      "Soften onion, add tomatoes and chickpeas; simmer 10 min.",
+      "Add cubed tofu and spinach; heat through."
+    ]
+  },
+  {
+    "id": "beef_bolognese",
+    "name": "Lean Beef Bolognese",
+    "meal_type": "dinner",
+    "minutes": 30,
+    "ingredients": [
+      {
+        "ingredient": "beef_mince_lean",
+        "qty": 130
+      },
+      {
+        "ingredient": "wholemeal_pasta",
+        "qty": 80
+      },
+      {
+        "ingredient": "tomatoes_canned",
+        "qty": 200
+      },
+      {
+        "ingredient": "onion",
+        "qty": 0.5
+      },
+      {
+        "ingredient": "carrot",
+        "qty": 0.5
+      },
+      {
+        "ingredient": "garlic",
+        "qty": 1
+      }
+    ],
+    "per_serve": {
+      "kcal": 620,
+      "protein_g": 44,
+      "carbs_g": 70,
+      "fat_g": 15
+    },
+    "steps": [
+      "Brown mince with onion, carrot and garlic.",
+      "Add tomatoes; simmer 15 min.",
+      "Serve over pasta."
+    ]
+  },
+  {
+    "id": "salmon_rice_bowl",
+    "name": "Teriyaki-style Salmon Rice Bowl",
+    "meal_type": "dinner",
+    "minutes": 20,
+    "ingredients": [
+      {
+        "ingredient": "salmon_fillet",
+        "qty": 130
+      },
+      {
+        "ingredient": "brown_rice",
+        "qty": 70
+      },
+      {
+        "ingredient": "broccoli",
+        "qty": 80
+      },
+      {
+        "ingredient": "avocado",
+        "qty": 0.5
+      },
+      {
+        "ingredient": "soy_sauce",
+        "qty": 10
+      },
+      {
+        "ingredient": "honey",
+        "qty": 5
+      }
+    ],
+    "per_serve": {
+      "kcal": 650,
+      "protein_g": 36,
+      "carbs_g": 62,
+      "fat_g": 28
+    },
+    "steps": [
+      "Cook rice.",
+      "Glaze salmon with soy and honey; pan-fry.",
+      "Steam broccoli; assemble bowl with avocado."
+    ]
+  },
+  {
+    "id": "boiled_eggs_snack",
+    "name": "Boiled Eggs & Carrot Sticks",
+    "meal_type": "snack",
+    "minutes": 10,
+    "ingredients": [
+      {
+        "ingredient": "eggs",
+        "qty": 2
+      },
+      {
+        "ingredient": "carrot",
+        "qty": 1
+      }
+    ],
+    "per_serve": {
+      "kcal": 180,
+      "protein_g": 13,
+      "carbs_g": 7,
+      "fat_g": 10
+    },
+    "steps": [
+      "Boil eggs 8 min; cool.",
+      "Slice carrot into sticks."
+    ]
+  },
+  {
+    "id": "yoghurt_almonds",
+    "name": "Yoghurt & Almonds",
+    "meal_type": "snack",
+    "minutes": 2,
+    "ingredients": [
+      {
+        "ingredient": "greek_yoghurt",
+        "qty": 150
+      },
+      {
+        "ingredient": "almonds",
+        "qty": 15
+      }
+    ],
+    "per_serve": {
+      "kcal": 230,
+      "protein_g": 18,
+      "carbs_g": 9,
+      "fat_g": 14
+    },
+    "steps": [
+      "Top yoghurt with almonds."
+    ]
+  },
+  {
+    "id": "protein_shake",
+    "name": "Protein Shake",
+    "meal_type": "snack",
+    "minutes": 2,
+    "ingredients": [
+      {
+        "ingredient": "whey_protein",
+        "qty": 30
+      },
+      {
+        "ingredient": "milk",
+        "qty": 250
+      }
+    ],
+    "per_serve": {
+      "kcal": 280,
+      "protein_g": 32,
+      "carbs_g": 15,
+      "fat_g": 9
+    },
+    "steps": [
+      "Shake protein powder with cold milk."
+    ]
+  },
+  {
+    "id": "pb_banana",
+    "name": "Banana & Peanut Butter",
+    "meal_type": "snack",
+    "minutes": 2,
+    "ingredients": [
+      {
+        "ingredient": "banana",
+        "qty": 1
+      },
+      {
+        "ingredient": "peanut_butter",
+        "qty": 20
+      }
+    ],
+    "per_serve": {
+      "kcal": 220,
+      "protein_g": 6,
+      "carbs_g": 30,
+      "fat_g": 10
+    },
+    "steps": [
+      "Slice banana and dip in peanut butter."
+    ]
+  }
+]
