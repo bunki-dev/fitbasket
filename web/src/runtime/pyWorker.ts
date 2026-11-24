@@ -1,7 +1,8 @@
 // Runs FitBasket's Python agent inside the browser with Pyodide, off the main thread.
 
 const PYODIDE_URL = "https://cdn.jsdelivr.net/pyodide/v314.0.8/full/";
-const BUNDLE_URL = `${import.meta.env.BASE_URL}py/fitbasket.zip`;
+// The version query changes on every deploy, so phones never run a stale cached bundle.
+const BUNDLE_URL = `${import.meta.env.BASE_URL}py/fitbasket.zip?v=${import.meta.env.VITE_PY_VERSION ?? "dev"}`;
 
 type Request = { id: number; method: "init" | "chat" | "reset" | "describe"; args: unknown[] };
 

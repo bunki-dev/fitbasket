@@ -1,7 +1,7 @@
 // FitBasket service worker: makes the app installable and usable offline.
-const CACHE = "fitbasket-v2";
+const CACHE = "fitbasket-v3";
 const PYODIDE_HOST = "cdn.jsdelivr.net";
-const SHELL = ["./", "./index.html", "./manifest.webmanifest", "./py/fitbasket.zip", "./icons/icon-192.png"];
+const SHELL = ["./", "./index.html", "./manifest.webmanifest", "./icons/icon-192.png"];
 
 self.addEventListener("install", (event) => {
   // Best effort: a missing file (e.g. no Python bundle when served by the API) must not block install.
@@ -43,15 +43,16 @@ self.addEventListener("fetch", (event) => {
   }
   if (url.origin !== self.location.origin || url.pathname.includes("/api/")) return;
 
-  // Pages: network first so updates arrive, cached copy when offline.
-  if (req.mode === "navigate") {
+  // Pages and the Python bundle: network first so updates arrive, cached copy when offline.
+  if (req.mode === "navigate" || url.pathname.endsWith(".zip")) {
     event.respondWith(
       fetch(req)
         .then((res) => {
-          caches.open(CACHE).then((c) => c.put("./index.html", res.clone()));
+          const key = req.mode === "navigate" ? "./index.html" : req;
+          if (res.ok) caches.open(CACHE).then((c) => c.put(key, res.clone()));
           return res;
         })
-        .catch(() => caches.match("./index.html")),
+        .catch(() => caches.match(req.mode === "navigate" ? "./index.html" : req, { ignoreSearch: true })),
     );
     return;
   }

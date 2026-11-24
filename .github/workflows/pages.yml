@@ -30,7 +30,9 @@ jobs:
           pip install -e ".[dev]"
           pytest -q tests/test_browser.py tests/test_domain.py tests/test_tools.py
       - name: Bundle the Python package
-        run: python scripts/build_py_bundle.py
+        run: |
+          python scripts/build_py_bundle.py
+          echo "PY_VERSION=$(sha256sum web/public/py/fitbasket.zip | cut -c1-12)" >> "$GITHUB_ENV"
       - uses: actions/setup-node@v4
         with:
           node-version: 22
@@ -39,6 +41,7 @@ jobs:
         env:
           VITE_RUNTIME: browser
           VITE_BASE: /${{ github.event.repository.name }}/
+          VITE_PY_VERSION: ${{ env.PY_VERSION }}
         run: |
           npm install
           npm run build
