@@ -26,6 +26,18 @@ def _fmt_qty(q: float, unit: str) -> str:
     return f"{n} slice{'s' if n != 1 else ''}" if unit == "slice" else str(n)
 
 
+def _pack_label(p: Product) -> str:
+    if p.unit in ("g", "ml"):
+        return (
+            f"{p.pack_size / 1000:g} {'kg' if p.unit == 'g' else 'L'}"
+            if p.pack_size >= 1000
+            else f"{p.pack_size:g} {p.unit}"
+        )
+    if p.pack_size == 1:
+        return "each"
+    return f"{p.pack_size:g} {'slices' if p.unit == 'slice' else 'pack'}"
+
+
 def _pick(candidates: list[Product], need: float) -> tuple[Product, int]:
     def cost(p: Product) -> tuple[float, float]:
         packs = math.ceil(need / p.pack_size)
@@ -87,6 +99,8 @@ def build_basket(state: UserState, ref: ReferenceData) -> Basket:
                 needed_qty=remaining,
                 unit=unit,
                 used_fraction=round(remaining / (packs * product.pack_size), 2),
+                pack_label=_pack_label(product),
+                was_price=product.price if product.on_special else None,
                 reason=reason,
             )
         )

@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState, type FormEvent } from "react";
 import type { Turn } from "../types";
+import { Arrow } from "./Doodles";
 
 const STARTERS = [
   "Plan my meals and build this week's shop",
@@ -36,10 +37,18 @@ export function Chat({ turns, busy, error, onSend }: Props) {
       <div className="chat-log" role="log" aria-live="polite">
         {turns.length === 0 && (
           <div className="chat-empty">
-            <h1>What are we planning this week?</h1>
+            <h1>
+              Eat well, shop smart,
+              <br />
+              train around life.
+            </h1>
             <p>
-              Tell me your goal, allergies, budget and the days you train. I'll plan your meals, build the
-              shop around this week's specials and what's already in your pantry, and set up your workouts.
+              Tell me your goal, allergies, budget and the days you train. I'll plan the week's meals, fill your
+              trolley from the specials and what's already in the pantry, and write your workouts.
+            </p>
+            <p className="margin-note starters-note">
+              or start with one of these
+              <Arrow />
             </p>
             <div className="starters">
               {STARTERS.map((s) => (
@@ -61,7 +70,7 @@ export function Chat({ turns, busy, error, onSend }: Props) {
             )}
           </div>
         ))}
-        {busy && <div className="turn turn-assistant turn-pending">Working on it…</div>}
+        {busy && <div className="turn turn-assistant turn-pending">Writing your list…</div>}
         {error && (
           <div className="chat-error" role="alert">
             Something went wrong: {error}

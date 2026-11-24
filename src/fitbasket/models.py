@@ -179,6 +179,8 @@ class BasketLine(BaseModel):
     needed_qty: float
     unit: str
     used_fraction: float = Field(description="Share of the purchased quantity this week's plan uses")
+    pack_label: str = Field("", description="Pack size as printed, e.g. '500 g' or '12 pack'")
+    was_price: float | None = Field(None, description="Regular price per pack when on special")
     reason: str
 
 

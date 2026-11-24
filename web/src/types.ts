@@ -33,6 +33,8 @@ export interface BasketLine {
   needed_qty: number;
   unit: string;
   used_fraction: number;
+  pack_label: string;
+  was_price: number | null;
   reason: string;
 }
 

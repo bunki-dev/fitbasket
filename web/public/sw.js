@@ -1,5 +1,5 @@
 // FitBasket service worker: makes the app installable and usable offline.
-const CACHE = "fitbasket-v1";
+const CACHE = "fitbasket-v2";
 const PYODIDE_HOST = "cdn.jsdelivr.net";
 const SHELL = ["./", "./index.html", "./manifest.webmanifest", "./py/fitbasket.zip", "./icons/icon-192.png"];
 

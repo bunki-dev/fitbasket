@@ -1,7 +1,8 @@
 import { useEffect, useMemo, useState } from "react";
 import { Chat } from "./components/Chat";
 import { MealWeek } from "./components/MealWeek";
-import { Receipt } from "./components/Receipt";
+import { Cart } from "./components/Cart";
+import { NavIcon, Wordmark } from "./components/Doodles";
 import { Settings } from "./components/Settings";
 import { TraceView } from "./components/TraceView";
 import { Workouts } from "./components/Workouts";
@@ -12,7 +13,7 @@ import type { AppState, ChatResponse, Turn } from "./types";
 type Tab = "basket" | "meals" | "workouts" | "trace";
 type View = "chat" | Tab;
 const TABS: { id: Tab; label: string }[] = [
-  { id: "basket", label: "Basket" },
+  { id: "basket", label: "Trolley" },
   { id: "meals", label: "Meals" },
   { id: "workouts", label: "Workouts" },
   { id: "trace", label: "Agent trace" },
@@ -107,7 +108,7 @@ export default function App() {
   if (loading) {
     return (
       <div className="boot" role="status">
-        <span className="brand-mark brand-mark-lg" aria-hidden="true" />
+        <Wordmark />
         <p>{loading}</p>
       </div>
     );
@@ -116,10 +117,7 @@ export default function App() {
   return (
     <div className="app">
       <header className="topbar">
-        <div className="brand">
-          <span className="brand-mark" aria-hidden="true" />
-          FitBasket
-        </div>
+        <Wordmark />
         {state && (
           <ul className="who" aria-label="Profile">
             <li>{state.profile.name}</li>
@@ -161,7 +159,7 @@ export default function App() {
             ))}
           </nav>
           <div className="panel-body" role="tabpanel">
-            {tab === "basket" && <Receipt basket={state?.basket ?? null} />}
+            {tab === "basket" && <Cart basket={state?.basket ?? null} />}
             {tab === "meals" && <MealWeek plan={state?.meal_plan ?? null} />}
             {tab === "workouts" && <Workouts plan={state?.workout_plan ?? null} />}
             {tab === "trace" && <TraceView last={last} />}
@@ -194,19 +192,5 @@ export default function App() {
         />
       )}
     </div>
-  );
-}
-
-function NavIcon({ id }: { id: View }) {
-  const paths: Record<string, string> = {
-    chat: "M4 5h16v11H9l-5 4z",
-    basket: "M3 9h18l-2 11H5zM8 9l4-5 4 5",
-    meals: "M7 3v8M5 3v5a2 2 0 0 0 4 0V3M7 11v10M16 3c-2 2-2 6 0 8v10",
-    workouts: "M3 10v4M6 7v10M18 7v10M21 10v4M6 12h12",
-  };
-  return (
-    <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true">
-      <path d={paths[id] ?? ""} fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinejoin="round" />
-    </svg>
   );
 }
