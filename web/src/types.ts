@@ -50,13 +50,23 @@ export interface Basket {
   tips: string[];
 }
 
+export interface WorkoutExercise {
+  exercise_id: string;
+  name: string;
+  prescription: string;
+  video_query: string;
+  video_id?: string | null;
+  video_title?: string | null;
+}
+
 export interface WorkoutPlan {
   sessions: {
     day: string;
     focus: string;
-    exercises: { exercise_id: string; name: string; prescription: string; video_query: string }[];
+    exercises: WorkoutExercise[];
   }[];
   rest_days: string[];
+  sport_days?: string[];
   notes: string[];
 }
 

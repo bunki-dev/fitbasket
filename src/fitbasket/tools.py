@@ -22,7 +22,7 @@ from .domain.meals import plan_meals, swap_meal
 from .domain.rules import allowed_products, basket_violations, nutrition_targets, recipe_ok
 from .domain.videos import find_videos
 from .domain.workouts import plan_workouts
-from .models import Allergen, Day, Diet, Goal, MealType, Profile, normalise_allergies
+from .models import Allergen, Day, Diet, Goal, MealType, Profile, Video, normalise_allergies
 from .store import ReferenceData, UserState, reference_data
 
 
@@ -276,7 +276,9 @@ def create_workout_plan(state: UserState, ref: ReferenceData, _: NoArgs) -> dict
             for s in plan.sessions
         },
         "rest_days": plan.rest_days,
+        "sport_days": plan.sport_days,
         "notes": plan.notes,
+        "videos": "Every exercise has a hand-picked how-to video, shown in the Workouts tab.",
     }
 
 
@@ -286,6 +288,10 @@ def find_exercise_videos(state: UserState, ref: ReferenceData, args: VideoSearch
         if ex is None:
             raise ToolError(f"Unknown exercise '{args.exercise_id}'.")
         query = ex.video_query
+        if ex.video_url:  # a hand-checked video comes first; search results follow
+            curated = Video(title=ex.video_title or ex.name, url=ex.video_url, source="curated")
+            more = [v for v in find_videos(query) if v.url != curated.url]
+            return {"query": query, "videos": [curated.model_dump()] + [v.model_dump() for v in more[:2]]}
     elif args.query:
         query = args.query
     else:

@@ -52,10 +52,21 @@ def test_specials_search_only_returns_specials(state):
     assert out["products"] and all(p["special_price"] is not None for p in out["products"])
 
 
-def test_video_fallback_is_a_search_link_not_a_made_up_video(state):
+def test_curated_video_comes_first(state):
     out = run("find_exercise_videos", state, {"exercise_id": "plank"})
+    assert out["videos"][0]["source"] == "curated"
+    assert out["videos"][0]["url"] == "https://www.youtube.com/watch?v=6LqqeBtFn9M"
+
+
+def test_free_text_video_fallback_is_a_search_link_not_a_made_up_video(state):
+    out = run("find_exercise_videos", state, {"query": "cricket bowling drills"})
     assert out["videos"][0]["source"] == "search_link"
     assert out["videos"][0]["url"].startswith("https://www.youtube.com/results?")
+
+
+def test_every_exercise_has_a_curated_video(ref):
+    for ex in ref.exercises.values():
+        assert ex.video_id and len(ex.video_id) == 11, ex.id
 
 
 def test_video_api_results_are_parsed():

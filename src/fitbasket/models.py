@@ -106,6 +106,12 @@ class Exercise(BaseModel):
     level: Literal["beginner", "intermediate", "advanced"]
     prescription: str
     video_query: str
+    video_id: str | None = None  # a curated how-to video, checked by hand
+    video_title: str | None = None
+
+    @property
+    def video_url(self) -> str | None:
+        return f"https://www.youtube.com/watch?v={self.video_id}" if self.video_id else None
 
 
 # ---------- user state ----------
@@ -201,6 +207,8 @@ class WorkoutExercise(BaseModel):
     name: str
     prescription: str
     video_query: str
+    video_id: str | None = None
+    video_title: str | None = None
 
 
 class WorkoutSession(BaseModel):
@@ -212,6 +220,7 @@ class WorkoutSession(BaseModel):
 class WorkoutPlan(BaseModel):
     sessions: list[WorkoutSession]
     rest_days: list[str]
+    sport_days: list[str] = []
     notes: list[str]
 
 
@@ -219,4 +228,4 @@ class Video(BaseModel):
     title: str
     url: str
     channel: str | None = None
-    source: Literal["youtube_api", "search_link"]
+    source: Literal["curated", "youtube_api", "search_link"]

@@ -118,3 +118,24 @@ def test_beginner_gets_no_advanced_exercises(ref):
 def test_days_are_valid(ref):
     plan = plan_workouts(Profile(training={"days_per_week": 6}), ref)
     assert all(s.day in DAYS for s in plan.sessions)
+
+
+def test_heavy_sport_week_gets_a_recovery_session_and_sport_days_are_not_rest(ref):
+    from fitbasket.models import Profile
+
+    p = Profile(
+        training={
+            "days_per_week": 3,
+            "session_minutes": 30,
+            "equipment": ["none"],
+            "focus": ["core"],
+            "sport_days": ["Tue", "Thu", "Sat", "Sun"],
+        }
+    )
+    plan = plan_workouts(p, ref)
+    assert [s.day for s in plan.sessions] == ["Mon", "Wed", "Fri"]
+    assert plan.sessions[0].focus.startswith("Core + mobility")
+    assert plan.sport_days == ["Tue", "Thu", "Sat", "Sun"]
+    assert plan.rest_days == []
+    for s in plan.sessions:
+        assert all(e.video_id for e in s.exercises)

@@ -4,7 +4,7 @@ An AI personal trainer and grocery agent. Tell it your goal, allergies, budget a
 
 1. **Plans a week of meals** that hit your calorie and protein targets.
 2. **Builds your weekly shop** from that plan: it subtracts what's already in your pantry, picks the cheapest safe packs, uses this week's specials and sticks to the brands you prefer, then checks the total against your budget.
-3. **Plans your workouts** around your schedule and sport days, with a how-to video for every exercise.
+3. **Plans your workouts** around your schedule and sport days. Every exercise has a hand-picked how-to video that plays inline, and a follow-along mode steps through a session one exercise at a time. Weeks with three or more game days get shorter sessions and a recovery day instead of extra conditioning.
 
 It's a tool-using LLM agent with guardrails, an eval suite and tracing, built to production habits rather than as a notebook demo. It runs on **Azure AI Foundry (Azure OpenAI)** or **Anthropic Claude**, and fully offline with no API key.
 
@@ -42,7 +42,7 @@ With no keys set, the agent uses the **offline provider**, a deterministic keywo
 |---|---|
 | Azure AI Foundry / Azure OpenAI | `LLM_PROVIDER=azure`, `AZURE_OPENAI_ENDPOINT`, `AZURE_OPENAI_API_KEY`, `AZURE_OPENAI_DEPLOYMENT` |
 | Anthropic Claude | `LLM_PROVIDER=anthropic`, `ANTHROPIC_API_KEY`, optionally `ANTHROPIC_MODEL` |
-| Real YouTube results | `YOUTUBE_API_KEY` (otherwise it links to a YouTube search, never an invented video) |
+| Extra YouTube results | `YOUTUBE_API_KEY` (curated videos always come first; free-text searches without a key link to a YouTube search, never an invented video) |
 
 Other ways in: `fitbasket` for a terminal chat, and `fitbasket-mcp` to use the tools from any MCP client.
 

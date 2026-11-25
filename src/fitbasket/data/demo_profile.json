@@ -9,20 +9,40 @@
     "activity_level": "light",
     "diet": "omnivore",
     "allergies": [],
-    "dislikes": ["feta"],
-    "preferred_brands": {"chicken_breast": "Paddock Co", "greek_yoghurt": "Alpine Creamery"},
+    "dislikes": [
+      "feta"
+    ],
+    "preferred_brands": {
+      "chicken_breast": "Paddock Co",
+      "greek_yoghurt": "Alpine Creamery"
+    },
     "avoid_brands": [],
     "weekly_budget": 180,
-    "meals_per_day": ["breakfast", "lunch", "dinner", "snack"],
+    "meals_per_day": [
+      "breakfast",
+      "lunch",
+      "dinner",
+      "snack"
+    ],
     "max_prep_minutes": 35,
     "training": {
-      "days_per_week": 4,
-      "session_minutes": 40,
-      "equipment": ["none", "dumbbells"],
+      "days_per_week": 3,
+      "session_minutes": 30,
+      "equipment": [
+        "none"
+      ],
       "level": "beginner",
-      "focus": ["core", "fat_loss"],
-      "sport_days": ["Sat"],
-      "unavailable_days": ["Sun"]
+      "focus": [
+        "core",
+        "fat_loss"
+      ],
+      "sport_days": [
+        "Tue",
+        "Thu",
+        "Sat",
+        "Sun"
+      ],
+      "unavailable_days": []
     }
   },
   "pantry": {

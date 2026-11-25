@@ -11,7 +11,9 @@
     "equipment": "none",
     "level": "beginner",
     "prescription": "3x10",
-    "video_query": "push up proper form"
+    "video_query": "push up proper form",
+    "video_id": "zF0jbubK_jU",
+    "video_title": "How To Do A Push-Up: Proper Form & Technique"
   },
   {
     "id": "incline_pushup",
@@ -24,7 +26,9 @@
     "equipment": "none",
     "level": "beginner",
     "prescription": "3x12",
-    "video_query": "incline push up form"
+    "video_query": "incline push up form",
+    "video_id": "y8I66lWtNB8",
+    "video_title": "Incline Push Up: How To (3 steps to proper form)"
   },
   {
     "id": "squat",
@@ -37,7 +41,9 @@
     "equipment": "none",
     "level": "beginner",
     "prescription": "3x15",
-    "video_query": "bodyweight squat form"
+    "video_query": "bodyweight squat form",
+    "video_id": "ZLJBfYF_oO0",
+    "video_title": "Bodyweight Squat: How To (3 steps to proper form)"
   },
   {
     "id": "split_squat",
@@ -50,7 +56,9 @@
     "equipment": "none",
     "level": "intermediate",
     "prescription": "3x8 each",
-    "video_query": "bulgarian split squat form"
+    "video_query": "bulgarian split squat form",
+    "video_id": "VPhhE6bBzZE",
+    "video_title": "How To Do Bulgarian Split Squats Correctly"
   },
   {
     "id": "glute_bridge",
@@ -63,7 +71,9 @@
     "equipment": "none",
     "level": "beginner",
     "prescription": "3x15",
-    "video_query": "glute bridge form"
+    "video_query": "glute bridge form",
+    "video_id": "KI6fjDqGZh4",
+    "video_title": "Glute Bridge: How To (3 steps to proper form)"
   },
   {
     "id": "reverse_lunge",
@@ -76,7 +86,9 @@
     "equipment": "none",
     "level": "beginner",
     "prescription": "3x10 each",
-    "video_query": "reverse lunge form"
+    "video_query": "reverse lunge form",
+    "video_id": "-HjB2x75haE",
+    "video_title": "Reverse Lunge: How To (3 steps to proper form)"
   },
   {
     "id": "pike_pushup",
@@ -89,7 +101,9 @@
     "equipment": "none",
     "level": "intermediate",
     "prescription": "3x8",
-    "video_query": "pike push up form"
+    "video_query": "pike push up form",
+    "video_id": "pHR5yG6xBps",
+    "video_title": "Pike Push Up Tutorial For Beginners (With Progressions)"
   },
   {
     "id": "db_row",
@@ -102,7 +116,9 @@
     "equipment": "dumbbells",
     "level": "beginner",
     "prescription": "3x10 each",
-    "video_query": "one arm dumbbell row form"
+    "video_query": "one arm dumbbell row form",
+    "video_id": "vbechsUCn24",
+    "video_title": "Single Arm Dumbbell Row: How To"
   },
   {
     "id": "db_press",
@@ -115,7 +131,9 @@
     "equipment": "dumbbells",
     "level": "beginner",
     "prescription": "3x10",
-    "video_query": "dumbbell shoulder press form"
+    "video_query": "dumbbell shoulder press form",
+    "video_id": "iZ7k3sJ-wZk",
+    "video_title": "Dumbbell Shoulder Press: How to"
   },
   {
     "id": "db_rdl",
@@ -129,7 +147,9 @@
     "equipment": "dumbbells",
     "level": "intermediate",
     "prescription": "3x10",
-    "video_query": "dumbbell romanian deadlift form"
+    "video_query": "dumbbell romanian deadlift form",
+    "video_id": "hQgFixeXdZo",
+    "video_title": "Dumbbell Romanian (RDL) Deadlift | Technique for Beginners"
   },
   {
     "id": "goblet_squat",
@@ -143,7 +163,9 @@
     "equipment": "dumbbells",
     "level": "beginner",
     "prescription": "3x12",
-    "video_query": "goblet squat form"
+    "video_query": "goblet squat form",
+    "video_id": "6mf0oa2GGUc",
+    "video_title": "Goblet Squat Tutorial - Proper Form and Technique"
   },
   {
     "id": "superman",
@@ -156,7 +178,9 @@
     "equipment": "none",
     "level": "beginner",
     "prescription": "3x30s",
-    "video_query": "superman exercise form"
+    "video_query": "superman exercise form",
+    "video_id": "z6PJMT2y8GQ",
+    "video_title": "Exercise Tutorial - Superman"
   },
   {
     "id": "plank",
@@ -168,7 +192,9 @@
     "equipment": "none",
     "level": "beginner",
     "prescription": "3x40s",
-    "video_query": "plank proper form"
+    "video_query": "plank proper form",
+    "video_id": "6LqqeBtFn9M",
+    "video_title": "How to do the perfect plank: technique and common mistakes"
   },
   {
     "id": "side_plank",
@@ -181,7 +207,9 @@
     "equipment": "none",
     "level": "beginner",
     "prescription": "3x30s each",
-    "video_query": "side plank form"
+    "video_query": "side plank form",
+    "video_id": "rCxF2nG9vQ0",
+    "video_title": "How to do the perfect side plank and most common mistakes"
   },
   {
     "id": "dead_bug",
@@ -193,7 +221,9 @@
     "equipment": "none",
     "level": "beginner",
     "prescription": "3x10 each",
-    "video_query": "dead bug exercise form"
+    "video_query": "dead bug exercise form",
+    "video_id": "g_BYB0R-4Ws",
+    "video_title": "Core Exercise: Dead Bug"
   },
   {
     "id": "hollow_hold",
@@ -205,7 +235,9 @@
     "equipment": "none",
     "level": "intermediate",
     "prescription": "3x25s",
-    "video_query": "hollow body hold tutorial"
+    "video_query": "hollow body hold tutorial",
+    "video_id": "ME4mv4lCsvo",
+    "video_title": "How To: Hollow Body Hold - Form & Technique"
   },
   {
     "id": "leg_raise",
@@ -218,7 +250,9 @@
     "equipment": "none",
     "level": "intermediate",
     "prescription": "3x12",
-    "video_query": "lying leg raise form"
+    "video_query": "lying leg raise form",
+    "video_id": "RRxM0jc7ZQA",
+    "video_title": "How To Do Lying Leg Raises - Ab Exercise Tutorial"
   },
   {
     "id": "bicycle_crunch",
@@ -231,7 +265,9 @@
     "equipment": "none",
     "level": "beginner",
     "prescription": "3x20",
-    "video_query": "bicycle crunch form"
+    "video_query": "bicycle crunch form",
+    "video_id": "VaL7XWK3MVE",
+    "video_title": "How to Do a Bicycle Crunch Exercise"
   },
   {
     "id": "mountain_climber",
@@ -244,7 +280,9 @@
     "equipment": "none",
     "level": "beginner",
     "prescription": "4x30s",
-    "video_query": "mountain climbers form"
+    "video_query": "mountain climbers form",
+    "video_id": "gW-q50V6Z_0",
+    "video_title": "Mountain Climbers: How To (3 steps to proper form)"
   },
   {
     "id": "burpee",
@@ -256,7 +294,9 @@
     "equipment": "none",
     "level": "intermediate",
     "prescription": "4x10",
-    "video_query": "burpee proper form"
+    "video_query": "burpee proper form",
+    "video_id": "G2hv_NYhM-A",
+    "video_title": "How To Do Burpees With Proper Form"
   },
   {
     "id": "jump_squat",
@@ -269,7 +309,9 @@
     "equipment": "none",
     "level": "intermediate",
     "prescription": "4x12",
-    "video_query": "jump squat form"
+    "video_query": "jump squat form",
+    "video_id": "8Sl9h44XNJA",
+    "video_title": "Squat Jump: How To (3 steps to proper form)"
   },
   {
     "id": "high_knees",
@@ -281,7 +323,9 @@
     "equipment": "none",
     "level": "beginner",
     "prescription": "4x30s",
-    "video_query": "high knees exercise"
+    "video_query": "high knees exercise",
+    "video_id": "WofWmk-4qU4",
+    "video_title": "HIIT Exercises: How to do High Knees"
   },
   {
     "id": "hip_flexor_stretch",
@@ -293,7 +337,9 @@
     "equipment": "none",
     "level": "beginner",
     "prescription": "2x45s each",
-    "video_query": "kneeling hip flexor stretch"
+    "video_query": "kneeling hip flexor stretch",
+    "video_id": "eEuMCk2x0r8",
+    "video_title": "Kneeling Hip Flexor Stretch"
   },
   {
     "id": "worlds_greatest",
@@ -306,7 +352,9 @@
     "equipment": "none",
     "level": "beginner",
     "prescription": "2x5 each",
-    "video_query": "worlds greatest stretch"
+    "video_query": "worlds greatest stretch",
+    "video_id": "_kW3RTmwufc",
+    "video_title": "World's Greatest Stretch How-To"
   },
   {
     "id": "cat_cow",
@@ -318,6 +366,8 @@
     "equipment": "none",
     "level": "beginner",
     "prescription": "2x10",
-    "video_query": "cat cow stretch"
+    "video_query": "cat cow stretch",
+    "video_id": "iKQ-DHgti20",
+    "video_title": "How to Do a Cat-Cow Stretch"
   }
 ]

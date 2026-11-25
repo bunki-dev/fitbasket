@@ -204,6 +204,7 @@ button, textarea, input { font: inherit; color: inherit; }
 .session h3 span { font-family: var(--hand); font-size: 1.15rem; color: var(--muted); margin-left: 0.4rem; }
 .session ol { margin: 0; padding: 0; list-style: none; counter-reset: ex; }
 .session li { counter-increment: ex; display: grid; grid-template-columns: 1.6rem 1fr auto auto; gap: 0.6rem; align-items: baseline; padding: 0.4rem 0; border-bottom: 2px dotted var(--rule); }
+.session li .video { grid-column: 1 / -1; }
 .session li::before { content: counter(ex); font-family: var(--display); color: var(--blue); }
 .ex-rx { color: var(--muted); font-size: 0.9rem; white-space: nowrap; }
 .session a { font-family: var(--hand); font-size: 1.1rem; color: #c4007a; text-decoration-thickness: 2px; text-underline-offset: 3px; }
@@ -291,3 +292,34 @@ button, textarea, input { font: inherit; color: inherit; }
 @media (prefers-reduced-motion: reduce) {
   * { scroll-behavior: auto !important; }
 }
+
+/* ---------- workouts: week strip, videos, follow-along ---------- */
+.week-strip { list-style: none; margin: 0 0 1.2rem; padding: 0; display: grid; grid-template-columns: repeat(7, 1fr); gap: 4px; }
+.week-strip li { display: grid; justify-items: center; padding: 0.35rem 0 0.3rem; border: 2px solid var(--ink); border-radius: 9px 7px 10px 8px; font-size: 0.78rem; line-height: 1.2; }
+.week-strip b { font-family: var(--display); font-weight: 400; font-size: 1rem; }
+.week-strip .train { background: var(--yellow); }
+.week-strip .sport { background: var(--green); color: #fff; }
+.week-strip .rest { color: var(--muted); border-style: dashed; }
+.week-strip .today { box-shadow: 3px 3px 0 var(--pink); transform: translateY(-2px); }
+.today-tag { font-family: var(--hand); font-style: normal; font-size: 1.1rem; color: var(--pink); margin-left: 0.4rem; }
+.session.is-today { padding: 0.6rem 0.8rem; margin-inline: -0.8rem; background: rgba(255, 232, 0, 0.18); border-radius: 12px; }
+.start { margin: 0.1rem 0 0.5rem; padding: 0.35rem 0.9rem; border: 2px solid var(--ink); background: var(--blue); color: #fff; font-weight: 700; border-radius: 8px 12px 9px 7px; cursor: pointer; box-shadow: 2px 2px 0 var(--ink); }
+.start:active { transform: translate(2px, 2px); box-shadow: none; }
+.watch { background: none; border: 0; padding: 0; font-family: var(--hand); font-size: 1.1rem; color: #c4007a; text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 3px; cursor: pointer; }
+.video { margin: 0.5rem 0 0.3rem; display: grid; gap: 0.3rem; }
+.video iframe { width: 100%; aspect-ratio: 16 / 9; border: 2px solid var(--ink); border-radius: 10px; background: var(--ink); }
+.video a, .video-fallback { font-size: 0.85rem; color: var(--blue); }
+.follow { position: fixed; inset: 0; z-index: 20; overflow-y: auto; background: var(--paper) var(--grain); padding: 1rem max(1rem, calc(50vw - 300px)) calc(1.5rem + env(safe-area-inset-bottom)); display: flex; flex-direction: column; gap: 0.5rem; }
+.follow header { display: flex; justify-content: space-between; align-items: center; font-family: var(--hand); font-size: 1.15rem; color: var(--muted); }
+.follow-close { border: 2px solid var(--ink); background: var(--paper); border-radius: 8px; padding: 0.25rem 0.8rem; font-weight: 700; cursor: pointer; }
+.follow-progress { display: flex; gap: 4px; }
+.follow-progress span { flex: 1; height: 6px; border-radius: 3px; background: var(--rule); }
+.follow-progress .done { background: var(--green); }
+.follow-progress .now { background: var(--pink); }
+.follow h2 { font-family: var(--display); font-weight: 400; font-size: 2rem; line-height: 1.05; margin: 0.6rem 0 0; color: var(--blue); }
+.follow-rx { margin: 0; font-family: var(--hand); font-size: 1.5rem; }
+.follow-nav { display: flex; gap: 0.6rem; margin-top: auto; padding-top: 1rem; }
+.follow-nav button { flex: 1; padding: 0.75rem; border: 2px solid var(--ink); border-radius: 9px 12px 8px 11px; background: var(--paper); font-weight: 700; cursor: pointer; }
+.follow-nav button.primary { flex: 2; background: var(--pink); color: #fff; box-shadow: 3px 3px 0 var(--ink); }
+.follow-nav button:disabled { opacity: 0.4; cursor: default; }
+@media (prefers-reduced-motion: reduce) { .week-strip .today { transform: none; } }
