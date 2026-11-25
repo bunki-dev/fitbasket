@@ -31,6 +31,7 @@ export function Wordmark() {
 // Bottom-nav icons, drawn with a slightly wobbly hand.
 const NAV_PATHS: Record<string, { ink: string; tint: string }> = {
   chat: { ink: "M5 6c5-2 10-2 14 0 1 3 1 7 0 9-3 1-7 1-10 0l-4 4 1-5c-2-3-2-6-1-8z", tint: "M6 7h12v7H6z" },
+  macros: { ink: "M11 4a8 8 0 1 0 9 9h-9zM14 2c4 0 7 3 7 8h-7z", tint: "M5 12a6 6 0 0 0 12 1H11V7z" },
   basket: { ink: "M3 10c6-1 12-1 18 0l-2 10c-4 1-10 1-14 0zM8 10l4-6 4 6", tint: "M5 11h14l-2 8H7z" },
   meals: { ink: "M7 3v7c0 2-1 3-2 3M9 3v7c0 2 1 3 2 3M7 13v8M17 3c-3 3-3 8 0 10v8", tint: "M15 4c-2 3-2 7 0 9z" },
   workouts: { ink: "M3 10v4M6 7v10M18 7v10M21 10v4M6 12c4-1 8 1 12 0", tint: "M5 8h2v8H5zM17 8h2v8h-2z" },

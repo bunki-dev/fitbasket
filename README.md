@@ -5,6 +5,7 @@ An AI personal trainer and grocery agent. Tell it your goal, allergies, budget a
 1. **Plans a week of meals** that hit your calorie and protein targets.
 2. **Builds your weekly shop** from that plan: it subtracts what's already in your pantry, picks the cheapest safe packs, uses this week's specials and sticks to the brands you prefer, then checks the total against your budget.
 3. **Plans your workouts** around your schedule and sport days. Every exercise has a hand-picked how-to video that plays inline, and a follow-along mode steps through a session one exercise at a time. Weeks with three or more game days get shorter sessions and a recovery day instead of extra conditioning.
+4. **Tracks what you actually eat.** Scan a barcode with your phone camera and FitBasket looks the product up in [Open Food Facts](https://world.openfoodfacts.org), a real open food database. If it isn't there, add it from the label (kJ or kcal, per serve or per 100 g) and it's remembered for the next scan. The day's log goes to the agent with each message, so "how much protein have I got left?" is answered from what you've logged, through a `get_todays_intake` tool.
 
 It's a tool-using LLM agent with guardrails, an eval suite and tracing, built to production habits rather than as a notebook demo. It runs on **Azure AI Foundry (Azure OpenAI)** or **Anthropic Claude**, and fully offline with no API key.
 

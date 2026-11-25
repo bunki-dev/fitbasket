@@ -85,3 +85,28 @@ def test_video_api_failure_degrades_to_link():
     with mock.patch.object(videos.urllib.request, "urlopen", side_effect=OSError("down")):
         out = videos.find_videos("plank", api_key="k")
     assert out[0].source == "search_link"
+
+
+def test_todays_intake_totals_and_remaining(state):
+    from fitbasket.models import FoodEntry
+
+    state.food_log = [
+        FoodEntry(name="Greek yoghurt", grams=200, kcal=180, protein_g=20, carbs_g=8, fat_g=6),
+        FoodEntry(name="Chicken breast", grams=150, kcal=240, protein_g=45, carbs_g=0, fat_g=5, source="openfoodfacts"),
+    ]
+    out = run("get_todays_intake", state, {})
+    assert out["logged_items"] == 2
+    assert out["eaten"]["protein_g"] == 65
+    assert out["remaining"]["kcal"] == out["targets"]["kcal"] - 420
+
+
+def test_todays_intake_empty_points_to_the_macros_tab(state):
+    out = run("get_todays_intake", state, {})
+    assert out["logged_items"] == 0 and "Macros tab" in out["note"]
+
+
+def test_targets_include_carbs_and_fat_that_add_up(state):
+    from fitbasket.domain.rules import nutrition_targets
+
+    t = nutrition_targets(state.profile)
+    assert abs(t.protein_g * 4 + t.carbs_g * 4 + t.fat_g * 9 - t.kcal) < 15

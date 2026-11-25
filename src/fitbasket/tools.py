@@ -282,6 +282,24 @@ def create_workout_plan(state: UserState, ref: ReferenceData, _: NoArgs) -> dict
     }
 
 
+def get_todays_intake(state: UserState, ref: ReferenceData, _: NoArgs) -> dict:
+    targets = nutrition_targets(state.profile)
+    keys = ("kcal", "protein_g", "carbs_g", "fat_g")
+    eaten = {k: round(sum(getattr(e, k) for e in state.food_log), 1) for k in keys}
+    return {
+        "logged_items": len(state.food_log),
+        "eaten": eaten,
+        "targets": {k: getattr(targets, k) for k in keys},
+        "remaining": {k: round(getattr(targets, k) - eaten[k], 1) for k in keys},
+        "entries": [
+            f"{e.name} ({e.grams:g} g): {e.kcal:.0f} kcal, {e.protein_g:.0f} g protein" for e in state.food_log
+        ],
+        "note": "Logged by the user in the Macros tab (barcode scans and manual entries)."
+        if state.food_log
+        else "Nothing logged today yet. The user can scan a barcode or add food in the Macros tab.",
+    }
+
+
 def find_exercise_videos(state: UserState, ref: ReferenceData, args: VideoSearch) -> dict:
     if args.exercise_id:
         ex = ref.exercises.get(args.exercise_id)
@@ -325,6 +343,13 @@ class Tool:
 
 TOOLS: list[Tool] = [
     Tool("get_profile", "Read the user's profile, preferences and daily nutrition targets.", NoArgs, get_profile),
+    Tool(
+        "get_todays_intake",
+        "What the user has eaten today (from their food log), against their calorie and macro targets, "
+        "with what's remaining.",
+        NoArgs,
+        get_todays_intake,
+    ),
     Tool(
         "update_profile",
         "Change profile fields: goal, diet, allergies, dislikes, preferred or avoided "

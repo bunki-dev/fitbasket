@@ -85,6 +85,15 @@ export interface AppState {
   meal_plan: MealPlan | null;
   basket: Basket | null;
   workout_plan: WorkoutPlan | null;
+  targets?: Targets;
+}
+
+export interface Targets {
+  kcal: number;
+  protein_g: number;
+  carbs_g: number;
+  fat_g: number;
+  note: string;
 }
 
 export interface ToolEvent {

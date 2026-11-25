@@ -82,3 +82,18 @@ def test_bad_key_is_a_friendly_error():
     p = AnthropicBrowserProvider("bad", fetch_json=fake_fetch(401, {"error": {"message": "invalid x-api-key"}}, {}))
     with pytest.raises(ProviderError, match="Settings"):
         asyncio.run(p.acomplete("sys", [Message("user", "hi")], []))
+
+
+def test_chat_reads_the_food_log_sent_by_the_phone():
+    browser.init(None)
+    log = [{"name": "Protein bar", "grams": 60, "kcal": 210, "protein_g": 20, "carbs_g": 22, "fat_g": 7}]
+    out = json.loads(asyncio.run(browser.chat("How much protein have I got left today?", "{}", json.dumps(log))))
+    assert "get_todays_intake" in [e["name"] for e in out["tool_events"]]
+    assert "20 g protein" in out["reply"]
+    assert out["state"]["targets"]["protein_g"] > 0
+
+
+def test_bad_food_log_is_ignored():
+    browser.init(None)
+    out = json.loads(asyncio.run(browser.chat("what have I eaten today", "{}", '[{"name": 5}]')))
+    assert "Nothing logged" in out["reply"]

@@ -21,7 +21,7 @@ from .agent.agent import FitBasketAgent
 from .agent.providers.base import get_provider
 from .agent.types import Message
 from .domain.videos import find_videos
-from .models import Profile
+from .models import FoodEntry, Profile
 from .store import UserState, reference_data
 from .tools import TOOLS_BY_NAME, ToolError
 
@@ -65,6 +65,7 @@ class NewSession(BaseModel):
 
 class ChatIn(BaseModel):
     message: str = Field(min_length=1, max_length=4000)
+    food_log: list[FoodEntry] = Field(default_factory=list, max_length=200)
 
 
 class PantryIn(BaseModel):
@@ -102,6 +103,7 @@ def get_session(sid: str) -> dict:
 def chat(sid: str, body: ChatIn) -> dict:
     s = sessions.get(sid)
     with s.lock:  # one turn at a time per session
+        s.state.food_log = body.food_log
         res = agent.run(s.state, body.message, s.history)
         s.history = res.history[-40:]  # bound context growth
         return {

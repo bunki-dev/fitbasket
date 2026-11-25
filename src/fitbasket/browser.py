@@ -13,6 +13,7 @@ from .agent.agent import FitBasketAgent
 from .agent.providers.browser_http import AnthropicBrowserProvider, AzureBrowserProvider, ProviderError
 from .agent.providers.offline import OfflineProvider
 from .agent.types import Message, message_from_dict, message_to_dict
+from .models import FoodEntry
 from .store import UserState
 
 MAX_HISTORY = 40
@@ -73,8 +74,16 @@ def describe(settings_json: str = "{}") -> str:
     return json.dumps({"status": "ok", "provider": p.name, "model": p.model})
 
 
-async def chat(message: str, settings_json: str = "{}") -> str:
+def _set_food_log(intake_json: str | None) -> None:
+    try:
+        _state.food_log = [FoodEntry(**e) for e in json.loads(intake_json or "[]")][:200]
+    except Exception:
+        _state.food_log = []  # a bad log never blocks the chat
+
+
+async def chat(message: str, settings_json: str = "{}", intake_json: str | None = None) -> str:
     global _history
+    _set_food_log(intake_json)
     agent = FitBasketAgent(_provider(json.loads(settings_json or "{}")))
     try:
         res = await agent.arun(_state, message, _history)

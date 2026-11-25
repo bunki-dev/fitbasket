@@ -1,5 +1,6 @@
 import { api } from "../api";
 import type { AppState, ChatResponse, Turn } from "../types";
+import type { FoodEntryOut } from "./foodlog";
 import { loadSettings } from "./settings";
 
 export interface Started {
@@ -11,7 +12,7 @@ export interface Backend {
   kind: "server" | "browser";
   start(onProgress: (text: string) => void): Promise<Started>;
   describe(): Promise<{ provider: string; model: string }>;
-  chat(message: string): Promise<ChatResponse>;
+  chat(message: string, intake?: FoodEntryOut[]): Promise<ChatResponse>;
   reset(): Promise<Started>;
 }
 
@@ -51,7 +52,7 @@ function serverBackend(): Backend {
       return begin(s);
     },
     describe: () => api.health(),
-    chat: (message) => api.chat(sessionId, message),
+    chat: (message, intake) => api.chat(sessionId, message, intake),
     reset: async () => begin(await api.newSession()),
   };
 }
@@ -92,8 +93,13 @@ function browserBackend(): Backend {
       return call<Started>("init", read(SAVED_KEY));
     },
     describe: () => call("describe", loadSettings()),
-    async chat(message) {
-      const res = await call<ChatResponse & { saved?: unknown; error?: string }>("chat", message, loadSettings());
+    async chat(message, intake) {
+      const res = await call<ChatResponse & { saved?: unknown; error?: string }>(
+        "chat",
+        message,
+        loadSettings(),
+        intake ?? [],
+      );
       if (res.error) throw new Error(res.error);
       persist(res.saved);
       return res;

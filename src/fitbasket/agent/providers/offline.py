@@ -88,6 +88,13 @@ class OfflineProvider:
         wants_video = bool(re.search(r"video|how (do|to) i do|how to do|show me how|youtube", t))
         wants_deals = bool(re.search(r"special|deal|on sale|discount", t)) and not wants_shop
 
+        wants_intake = bool(
+            re.search(r"(left|remaining|so far|eaten|logged|today|intake|tracked)", t)
+            and re.search(r"macro|calorie|kcal|protein|carb|fat|eat|food|intake|today", t)
+            and not re.search(r"plan|shop|basket|week", t)
+        )
+        if wants_intake:
+            return [_call("get_todays_intake")]
         if wants_video:
             calls.append(_call("find_exercise_videos", query=self._video_query(t)))
         elif wants_workout:
@@ -146,6 +153,16 @@ class OfflineProvider:
             elif r.name == "search_products":
                 deals = [f"{p['name']} ${p['special_price']:.2f} (was ${p['price']:.2f})" for p in data["products"][:6]]
                 parts.append("This week's specials: " + "; ".join(deals) + ".")
+            elif r.name == "get_todays_intake":
+                if not data["logged_items"]:
+                    parts.append(data["note"])
+                else:
+                    e, left = data["eaten"], data["remaining"]
+                    parts.append(
+                        f"Today so far: {e['kcal']:.0f} kcal, {e['protein_g']:.0f} g protein, "
+                        f"{e['carbs_g']:.0f} g carbs, {e['fat_g']:.0f} g fat. Left for today: "
+                        f"{max(left['kcal'], 0):.0f} kcal and {max(left['protein_g'], 0):.0f} g protein."
+                    )
             elif r.name == "get_profile":
                 t = data["targets"]
                 parts.append(

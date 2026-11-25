@@ -5,14 +5,17 @@ import { Cart } from "./components/Cart";
 import { NavIcon, Wordmark } from "./components/Doodles";
 import { Settings } from "./components/Settings";
 import { TraceView } from "./components/TraceView";
+import { Macros } from "./components/Macros";
 import { Workouts } from "./components/Workouts";
+import { dayKey, forAgent, type LogEntry, loadLog, saveLog } from "./runtime/foodlog";
 import { createBackend } from "./runtime/backend";
 import { loadSettings, type ModelSettings } from "./runtime/settings";
 import type { AppState, ChatResponse, Turn } from "./types";
 
-type Tab = "basket" | "meals" | "workouts" | "trace";
+type Tab = "macros" | "basket" | "meals" | "workouts" | "trace";
 type View = "chat" | Tab;
 const TABS: { id: Tab; label: string }[] = [
+  { id: "macros", label: "Macros" },
   { id: "basket", label: "Trolley" },
   { id: "meals", label: "Meals" },
   { id: "workouts", label: "Workouts" },
@@ -35,6 +38,11 @@ export default function App() {
   const [model, setModel] = useState("");
   const [settings, setSettings] = useState<ModelSettings>(loadSettings);
   const [showSettings, setShowSettings] = useState(false);
+  const [log, setLogState] = useState<LogEntry[]>(loadLog);
+  const setLog = (next: LogEntry[]) => {
+    setLogState(next);
+    saveLog(next);
+  };
 
   useEffect(() => {
     backend
@@ -63,7 +71,7 @@ export default function App() {
     setBusy(true);
     setError(null);
     try {
-      const res = await backend.chat(text);
+      const res = await backend.chat(text, forAgent(log.filter((e) => e.date === dayKey())));
       setTurns((t) => [...t, { role: "assistant", text: res.reply, meta: res }]);
       setState(res.state);
       setLast(res);
@@ -159,6 +167,7 @@ export default function App() {
             ))}
           </nav>
           <div className="panel-body" role="tabpanel" key={tab}>
+            {tab === "macros" && <Macros log={log} setLog={setLog} targets={state?.targets ?? null} />}
             {tab === "basket" && <Cart basket={state?.basket ?? null} />}
             {tab === "meals" && <MealWeek plan={state?.meal_plan ?? null} />}
             {tab === "workouts" && <Workouts plan={state?.workout_plan ?? null} />}
@@ -168,7 +177,7 @@ export default function App() {
       </main>
 
       <nav className="bottom-nav" aria-label="Sections">
-        {([{ id: "chat", label: "Chat" }, ...TABS.slice(0, 3)] as { id: View; label: string }[]).map((t) => (
+        {([{ id: "chat", label: "Chat" }, ...TABS.slice(0, 4)] as { id: View; label: string }[]).map((t) => (
           <button
             key={t.id}
             type="button"

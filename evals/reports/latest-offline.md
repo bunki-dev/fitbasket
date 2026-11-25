@@ -1,6 +1,6 @@
 # Eval report: offline (offline-router)
 
-**15/15 cases passed** (100%). Latency p50 0.6 ms, p95 3.0 ms. Tokens 23321 in / 1343 out.
+**15/15 cases passed** (100%). Latency p50 0.8 ms, p95 3.7 ms. Tokens 25036 in / 1336 out.
 
 | Case | Result | Failed checks | Judge |
 |---|---|---|---|

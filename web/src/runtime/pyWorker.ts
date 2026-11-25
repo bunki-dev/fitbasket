@@ -55,7 +55,8 @@ ctx.onmessage = async (event: MessageEvent<Request>) => {
     } else {
       py.globals.set("_msg", args[0]);
       py.globals.set("_settings", JSON.stringify(args[1] ?? {}));
-      out = await py.runPythonAsync("await fb.chat(_msg, _settings)");
+      py.globals.set("_intake", JSON.stringify(args[2] ?? []));
+      out = await py.runPythonAsync("await fb.chat(_msg, _settings, _intake)");
     }
     ctx.postMessage({ type: "result", id, result: JSON.parse(String(out)) });
   } catch (e) {

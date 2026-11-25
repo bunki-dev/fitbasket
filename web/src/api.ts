@@ -1,3 +1,4 @@
+import type { FoodEntryOut } from "./runtime/foodlog";
 import type { AppState, ChatResponse } from "./types";
 
 async function request<T>(path: string, init?: RequestInit): Promise<T> {
@@ -23,9 +24,9 @@ export const api = {
   newSession: () =>
     request<{ session_id: string; state: AppState }>("/api/sessions", { method: "POST", body: "{}" }),
   getSession: (id: string) => request<{ session_id: string; state: AppState }>(`/api/sessions/${id}`),
-  chat: (id: string, message: string) =>
+  chat: (id: string, message: string, food_log: FoodEntryOut[] = []) =>
     request<ChatResponse>(`/api/sessions/${id}/chat`, {
       method: "POST",
-      body: JSON.stringify({ message }),
+      body: JSON.stringify({ message, food_log }),
     }),
 };

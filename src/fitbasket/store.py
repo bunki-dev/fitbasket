@@ -12,7 +12,7 @@ from functools import lru_cache
 from importlib import resources
 from typing import Protocol
 
-from .models import Basket, Exercise, Ingredient, MealPlan, Product, Profile, Recipe, WorkoutPlan
+from .models import Basket, Exercise, FoodEntry, Ingredient, MealPlan, Product, Profile, Recipe, WorkoutPlan
 
 
 def _load(name: str) -> list | dict:
@@ -70,6 +70,8 @@ class UserState:
     meal_plan: MealPlan | None = None
     basket: Basket | None = None
     workout_plan: WorkoutPlan | None = None
+    # Today's food log. The phone owns it and sends it with each message; it is not saved here.
+    food_log: list[FoodEntry] = field(default_factory=list)
 
     @classmethod
     def demo(cls) -> UserState:
@@ -94,4 +96,11 @@ class UserState:
             "meal_plan": self.meal_plan.model_dump() if self.meal_plan else None,
             "basket": self.basket.model_dump() if self.basket else None,
             "workout_plan": self.workout_plan.model_dump() if self.workout_plan else None,
+            "targets": _targets(self.profile),
         }
+
+
+def _targets(profile: Profile) -> dict:
+    from .domain.rules import nutrition_targets  # local import: rules depends on this module
+
+    return nutrition_targets(profile).model_dump()

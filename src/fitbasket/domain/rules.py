@@ -25,7 +25,9 @@ def nutrition_targets(p: Profile) -> NutritionTargets:
     note = (
         f"Estimated maintenance ~{round(tdee)} kcal/day. These are general estimates, not medical or dietetic advice."
     )
-    return NutritionTargets(kcal=int(kcal), protein_g=int(protein), note=note)
+    fat = round(kcal * 0.25 / 9)  # a quarter of energy from fat
+    carbs = max(round((kcal - protein * 4 - fat * 9) / 4), 0)  # the rest from carbohydrate
+    return NutritionTargets(kcal=int(kcal), protein_g=int(protein), carbs_g=int(carbs), fat_g=int(fat), note=note)
 
 
 def diet_allows(product: Product, ingredient: Ingredient, p: Profile) -> bool:

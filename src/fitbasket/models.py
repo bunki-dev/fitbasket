@@ -154,7 +154,21 @@ class Profile(BaseModel):
 class NutritionTargets(BaseModel):
     kcal: int
     protein_g: int
+    carbs_g: int = 0
+    fat_g: int = 0
     note: str
+
+
+class FoodEntry(BaseModel):
+    """One food the user logged on their device (scanned or typed in), already scaled to the amount eaten."""
+
+    name: str = Field(max_length=120)
+    grams: float = Field(ge=0, le=5000)
+    kcal: float = Field(ge=0, le=10000)
+    protein_g: float = Field(ge=0, le=1000)
+    carbs_g: float = Field(ge=0, le=1000)
+    fat_g: float = Field(ge=0, le=1000)
+    source: Literal["openfoodfacts", "manual"] = "manual"
 
 
 class PlannedMeal(BaseModel):
